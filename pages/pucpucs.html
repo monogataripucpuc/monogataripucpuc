@@ -47,6 +47,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
+    <!-- Data Display -->
     <script type="text/javascript" class="init">
 
         $(document).ready(function () {
@@ -81,13 +82,21 @@
         });
 
     </script>
+
+    <!-- test -->
+    <script type="text/javascript" class="init">
+        $(document).ready(function () {
+            $("#navbar-frame").load("/navbar.html");
+        });
+    </script>
+
 </head>
 
 <body>
 
     <div id="wrapper">
 
-        <?php include 'navbar.php'; ?>
+        <div id="navbar-frame"></div>
 
         <div id="page-wrapper">
             <div class="row">
