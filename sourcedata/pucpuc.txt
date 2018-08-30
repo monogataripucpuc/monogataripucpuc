@@ -1,27 +1,187 @@
 {
   "data": [
     [
-      "../assets/cha_block_hitagi01_v00.png",
-      "School Outfit Hitagi Senjogahara",
+      "../assets/pucpucs/cha_block_hitagi01_v00.png",
+      "Hitagi 01",
       "Hitagi Senjogahara",
       "200",
       "Explosion",
       ""
     ],
     [
-      "../assets/cha_block_yotsugi01_v00.png",
+      "../assets/pucpucs/cha_block_hitagi02_v00.png",
+      "Hitagi 02",
+      "Hitagi Senjogahara",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_hitagi03_v00.png",
+      "Hitagi 03",
+      "Hitagi Senjogahara",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_karen01_v00.png",
+      "Karen 01",
+      "Karen Araragi",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_koyomi01_v00.png",
+      "Koyomi 01",
+      "Koyomi Araragi",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_koyomi02_v00.png",
+      "Koyomi 02",
+      "Koyomi Araragi",
+      "200",
+      "Explosion",
+      ""
+    ],    
+    [
+      "../assets/pucpucs/cha_block_mayoi01_v00.png",
+      "Mayoi 01",
+      "Mayoi Hachikuji",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_mayoi02_v00.png",
+      "Mayoi 02",
+      "Mayoi Hachikuji",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_meme01_v00.png",
+      "Meme 01",
+      "Meme Oshino",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_nadeko01_v00.png",
+      "Nadeko 01",
+      "Nadeko ???",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_nadeko02_v00.png",
+      "Nadeko 02",
+      "Nadeko ???",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_ougi01_v00.png",
+      "Ougi 01",
+      "Ougi Oshino",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_shinobu02_v00.png",
+      "Shinobu 02",
+      "Shinobu Oshino",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_shinobu03_v00.png",
+      "Shinobu 03",
+      "Shinobu Oshino",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_shinobu04_v00.png",
+      "Shinobu 04",
+      "Shinobu Oshino",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_sodachi01_v00.png",
+      "Sodachi 01",
+      "Sodachi ???",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_suruga01_v00.png",
+      "Suruga 01",
+      "Suruga Kanbaru",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_suruga02_v00.png",
+      "Suruga 02",
+      "Suruga Kanbaru",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_tsubasa01_v00.png",
+      "Tsubasa 01",
+      "Tsubasa Hanekawa",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_tsubasa02_v00.png",
+      "Tsubasa 02",
+      "Tsubasa Hanekawa",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_tsubasa04_v00.png",
+      "Tsubasa 04",
+      "Tsubasa Hanekawa",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_tsukihi01_v00.png",
+      "Tsukihi 04",
+      "Tsukihi Araragi",
+      "200",
+      "Explosion",
+      ""
+    ],
+    [
+      "../assets/pucpucs/cha_block_yotsugi01_v00.png",
       "Doll Yotsugi Ononoki",
       "Yotsugi Ononoki",
       "250",
       "Unlimited Rulebook",
-      ""
-    ],
-    [
-      "../assets/cha_block_shinobu02_v00.png",      
-      "Donut Oshino Shinobu",
-      "Oshino Shinobu",
-      "300",
-      "Size",
       ""
     ]
   ]
