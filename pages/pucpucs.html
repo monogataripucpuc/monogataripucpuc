@@ -81,13 +81,21 @@
         });
 
     </script>
+
+    <script src="jquery.js"></script>
+    <script> 
+        $(function () {
+            $("#includedContent").load("navbar.html");
+        });
+    </script>
+
 </head>
 
 <body>
 
     <div id="wrapper">
-        
-        <link rel="import" href="navbar.html">
+
+        <div id="includedContent"></div>
 
         <div id="page-wrapper">
             <div class="row">
