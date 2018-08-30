@@ -6,7 +6,7 @@
       "Hitagi Senjogahara",
       "200",
       "Explosion",
-      ""
+      "../assets/pucpuc/splashart/cha_game_hitagi01.png"
     ],
     [
       "../assets/pucpuc/sprite/cha_block_hitagi02_v00.png",
@@ -14,7 +14,7 @@
       "Hitagi Senjogahara",
       "200",
       "Explosion",
-      ""
+      "../assets/pucpuc/splashart/cha_game_hitagi02.png"
     ],
     [
       "../assets/pucpuc/sprite/cha_block_hitagi03_v00.png",
@@ -22,7 +22,7 @@
       "Hitagi Senjogahara",
       "200",
       "Explosion",
-      ""
+      "../assets/pucpuc/splashart/cha_game_hitagi03.png"
     ],
     [
       "../assets/pucpuc/sprite/cha_block_karen01_v00.png",
@@ -30,7 +30,7 @@
       "Karen Araragi",
       "200",
       "Explosion",
-      ""
+      "../assets/pucpuc/splashart/cha_game_karen01.png"
     ],
     [
       "../assets/pucpuc/sprite/cha_block_koyomi01_v00.png",
@@ -38,7 +38,7 @@
       "Koyomi Araragi",
       "200",
       "Explosion",
-      ""
+      "../assets/pucpuc/splashart/cha_game_koyomi01.png"
     ],
     [
       "../assets/pucpuc/sprite/cha_block_koyomi02_v00.png",
@@ -46,7 +46,7 @@
       "Koyomi Araragi",
       "200",
       "Explosion",
-      ""
+      "../assets/pucpuc/splashart/cha_game_koyomi02.png"
     ],    
     [
       "../assets/pucpuc/sprite/cha_block_mayoi01_v00.png",
@@ -54,7 +54,7 @@
       "Mayoi Hachikuji",
       "200",
       "Explosion",
-      ""
+      "../assets/pucpuc/splashart/cha_game_mayoi01.png"
     ],
     [
       "../assets/pucpuc/sprite/cha_block_mayoi02_v00.png",

@@ -76,8 +76,13 @@
                     { data: 2 },
                     { data: 3 },
                     { data: 4 },
-                    { data: 5 }
-                ], 
+                    {
+                        data: 5,
+                        render: function (data, type, row) {
+                            return '<img src="' + data + '"/>';
+                        }
+                    },
+                ],
                 stateSave: true,
                 columnDefs: [{
                     orderable: false,
@@ -128,7 +133,7 @@
                                         <th>Character</th>
                                         <th>Attack</th>
                                         <th>Special</th>
-                                        <th class="none" style="display:none;">Something Hidden</th>
+                                        <th class="none" style="display:none;"></th>
                                     </tr>
                                 </thead>
                             </table>
