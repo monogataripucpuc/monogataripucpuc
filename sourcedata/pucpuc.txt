@@ -2,23 +2,26 @@
   "data": [
     [
       "../assets/cha_block_hitagi01_v00.png",
-      "Hitagi",
-      "Sejogahara",
-      "stare",
-      "mfw"
+      "School Outfit Hitagi Senjogahara",
+      "Hitagi Senjogahara",
+      "200",
+      "Explosion",
+      ""
     ],
     [
       "../assets/cha_block_yotsugi01_v00.png",
-      "Ononoki",
-      "Yotsugi",
-      "peace peace",
+      "Doll Yotsugi Ononoki",
+      "Yotsugi Ononoki",
+      "250",
+      "Unlimited Rulebook",
       ""
     ],
     [
       "../assets/cha_block_shinobu02_v00.png",      
-      "Shinobu",
-      "Oshino",
-      "donuts",
+      "Donut Oshino Shinobu",
+      "Oshino Shinobu",
+      "300",
+      "Size",
       ""
     ]
   ]
