@@ -52,12 +52,13 @@
         $(document).ready(function () {
             $('#example').DataTable({
                 ajax: "../sourcedata/pucpuc.txt",
+                stateSave: true,
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({
                             header: function (row) {
                                 var data = row.data();
-                                return 'Details for ' + data[1] + ' ' + data[2];
+                                return 'Details for ' + data[1];
                             }
                         }),
                         renderer: $.fn.dataTable.Responsive.renderer.tableAll({
@@ -65,6 +66,7 @@
                         })
                     }
                 },
+                selector: 'td:first-child',
                 columns: [
                     {
                         data: 0,
@@ -75,7 +77,8 @@
                     { data: 1 },
                     { data: 2 },
                     { data: 3 },
-                    { data: 4 }
+                    { data: 4 },
+                    { data: 5}
                 ]
             });
         });
