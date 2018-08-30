@@ -178,7 +178,7 @@
     ],
     [
       "../assets/pucpucs/cha_block_yotsugi01_v00.png",
-      "Doll Yotsugi Ononoki",
+      "Yotsugi 01",
       "Yotsugi Ononoki",
       "250",
       "Unlimited Rulebook",
