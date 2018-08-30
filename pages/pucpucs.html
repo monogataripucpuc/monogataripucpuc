@@ -81,21 +81,13 @@
         });
 
     </script>
-
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script>
-        $.get("navigation.html", function (data) {
-            $("#nav-placeholder").replaceWith(data);
-        });
-    </script>
-
 </head>
 
 <body>
 
     <div id="wrapper">
 
-        <div id="nav-placeholder"></div>
+        <?php include 'navbar.php'; ?>
 
         <div id="page-wrapper">
             <div class="row">
