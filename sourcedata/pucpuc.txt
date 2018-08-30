@@ -1,0 +1,25 @@
+{
+  "data": [
+    [
+      "../assets/cha_block_hitagi01_v00.png",
+      "Hitagi",
+      "Sejogahara",
+      "stare",
+      "mfw"
+    ],
+    [
+      "../assets/cha_block_yotsugi01_v00.png",
+      "Ononoki",
+      "Yotsugi",
+      "peace peace",
+      ""
+    ],
+    [
+      "../assets/cha_block_shinobu02_v00.png",      
+      "Shinobu",
+      "Oshino",
+      "donuts",
+      ""
+    ]
+  ]
+}
