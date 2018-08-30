@@ -52,7 +52,6 @@
         $(document).ready(function () {
             $('#example').DataTable({
                 ajax: "../sourcedata/pucpuc.txt",
-                stateSave: true,
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({
@@ -79,6 +78,7 @@
                     { data: 4 },
                     { data: 5 }
                 ], 
+                stateSave: true,
                 columnDefs: [{
                     orderable: false,
                     className: 'select-checkbox',
