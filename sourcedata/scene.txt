@@ -1,25 +1,22 @@
 {
   "data": [
     [
-      "https://gamewith.akamaized.net/img/455347eef53138230272a7b49c7d99c8.jpg",
-      "Hitagi",
-      "Sejogahara",
-      "stare",
-      "mfw"
+      "scn_cardS_bake01_0001",
+      "Test",
+      "Test 2",
+      "Mehr Test"
     ],
     [
-      "https://gamewith.akamaized.net/img/3bc4eee015403a6f6c3acb844c6c2c32.jpg",
-      "Ononoki",
-      "Yotsugi",
-      "peace peace",
-      ""
+      "scn_cardS_bake01_0010",
+      "Test",
+      "Test 2",
+      "Mehr Test"
     ],
     [
-      "https://gamewith.akamaized.net/img/acfe360a00f12ad12269476d2977f058.jpg",      
-      "Shinobu",
-      "Oshino",
-      "donuts",
-      ""
+      "scn_cardS_bake01_0020",
+      "Test",
+      "Test 2",
+      "Mehr Test"
     ]
   ]
 }
