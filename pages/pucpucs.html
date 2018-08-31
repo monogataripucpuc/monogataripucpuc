@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Puc Puc Overview</title>
+    <link rel="icon" type="img/ico" href="../assets/favicon.png">
+
+    <title>PucPucs</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -69,7 +71,7 @@
                     {
                         data: 0,
                         render: function (data, type, row) {
-                            return '<img src="' + data + '" width="75" height="75"/>';
+                            return '<img src="../assets/pucpuc/sprite/' + data + '.png" width="75" height="75"/>';
                         }
                     },
                     { data: 1 },
@@ -77,22 +79,12 @@
                     { data: 3 },
                     { data: 4 },
                     {
-                        data: 5,
+                        data: 0,
                         render: function (data, type, row) {
-                            return '<img src="' + data + '"/>';
+                            return '<img src="../assets/pucpuc/splashart/' + data + '.png"/>';
                         }
                     },
-                ],
-                stateSave: true,
-                columnDefs: [{
-                    orderable: false,
-                    className: 'select-checkbox',
-                    targets: 0
-                }],
-                select: {
-                    style: 'os',
-                    selector: 'td:first-child'
-                },
+                ]
             });
         });
 
