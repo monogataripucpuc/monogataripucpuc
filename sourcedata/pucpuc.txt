@@ -4,162 +4,162 @@
       "hitagi01",
       "Hitagi 01",
       "Hitagi Senjogahara",
-      "200",
-      "Flavour"
+      "???",
+      "???"
     ],
     [
       "hitagi02",
       "Hitagi 02",
       "Hitagi Senjogahara",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "hitagi03",
       "Hitagi 03",
       "Hitagi Senjogahara",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "karen01",
       "Karen 01",
       "Karen Araragi",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "koyomi01",
       "Koyomi 01",
       "Koyomi Araragi",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "koyomi02",
       "Koyomi 02",
       "Koyomi Araragi",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "mayoi01",
       "Mayoi 01",
       "Mayoi Hachikuji",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "mayoi02",
       "Mayoi 02",
       "Mayoi Hachikuji",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "meme01",
       "Meme 01",
       "Meme Oshino",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "nadeko01",
       "Nadeko 01",
       "Nadeko ???",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "nadeko02",
       "Nadeko 02",
       "Nadeko ???",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "ougi01",
       "Ougi 01",
       "Ougi Oshino",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "shinobu02",
       "Shinobu 02",
       "Shinobu Oshino",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "shinobu03",
       "Shinobu 03",
       "Shinobu Oshino",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "shinobu04",
       "Shinobu 04",
       "Shinobu Oshino",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "sodachi01",
       "Sodachi 01",
       "Sodachi ???",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "suruga01",
       "Suruga 01",
       "Suruga Kanbaru",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "suruga02",
       "Suruga 02",
       "Suruga Kanbaru",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "tsubasa01",
       "Tsubasa 01",
       "Tsubasa Hanekawa",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "tsubasa02",
       "Tsubasa 02",
       "Tsubasa Hanekawa",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "tsubasa04",
       "Tsubasa 04",
       "Tsubasa Hanekawa",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "tsukihi01",
       "Tsukihi 01",
       "Tsukihi Araragi",
-      "200",
-      "Explosion"
+      "???",
+      "???"
     ],
     [
       "yotsugi01",
       "Yotsugi 01",
       "Yotsugi Ononoki",
-      "250",
-      "Unlimited Rulebook"
+      "???",
+      "???"
     ]
   ]
 }
