@@ -42,12 +42,19 @@
 
     <!-- DataTables JavaScript -->
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Navigation Bar Script-->
+    <script> 
+        $(function () {
+            $("#navigationBar").load("navbar.html");
+        });
+    </script>
 
     <!-- Data Display Script-->
     <script type="text/javascript" class="init">
@@ -60,7 +67,7 @@
                         render: function (data, type, row) {
                             return '<img src="../assets/scene/card/' + data[0] + '.png" width="60" height="60"/> ' + data[1];
                         }
-                    },    
+                    },
                     { data: 2 },
                     { data: 3 }
                 ]
@@ -68,20 +75,13 @@
         });
 
     </script>
-
-    <!-- Navigation Bar Script-->
-    <script> 
-        $(function(){
-          $("#includedContent").load("navbar.html"); 
-        });
-    </script> 
 </head>
 
 <body>
 
     <div id="wrapper">
 
-        <div id="includedContent"></div>
+        <div id="navigationBar"></div>
 
         <div id="page-wrapper">
             <div class="row">
