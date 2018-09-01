@@ -14,4 +14,10 @@ pucpucs
         - last row in center
     - implement state save function with checkbox for pucpucs and scenes
     
+items/banners/story
+    - padding
+
+items
+    - place into table with invisible borders
+
 change website to monogataripucpuc.github.io
