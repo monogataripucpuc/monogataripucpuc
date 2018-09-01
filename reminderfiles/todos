@@ -3,7 +3,7 @@ dashboard
 
 navigation bar
     - remove search bar
-    
+
 scenes 
     - overlay frame with card
     - display stars for rarity (case with differnt img directions)
@@ -13,5 +13,9 @@ pucpucs
         - increased font size
         - last row in center
     - implement state save function with checkbox for pucpucs and scenes
+
+items/banners/story
+    - remove underline from group headers
+    - allow click on whole group header
 
 change website to monogataripucpuc.github.io
