@@ -49,17 +49,24 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
+    <!-- Navigation Bar Script-->
+    <script> 
+        $(function () {
+            $("#navigationBar").load("navbar.html");
+        });
+    </script>
+
     <!-- Data Display Script-->
     <script type="text/javascript" class="init">
         $(document).ready(function () {
-            $('#example').DataTable({
+            $('#pucpuc').DataTable({
                 ajax: "../sourcedata/pucpuc.txt",
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({
                             header: function (row) {
                                 var data = row.data();
-                                return 'Details for ' + data[1];
+                                return 'Details for ' + data[2];
                             }
                         }),
                         renderer: $.fn.dataTable.Responsive.renderer.tableAll({
@@ -68,17 +75,18 @@
                     }
                 },
                 columns: [
+                    { data: 0 },
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="../assets/pucpuc/sprite/' + data[0] + '.png" width="60" height="60"/> ' + data[1];
+                            return '<img src="../assets/pucpuc/sprite/' + data[1] + '.png" width="50" height="50"/> ' + data[2];
                         }
                     },
-                    { data: 2 },
                     { data: 3 },
                     { data: 4 },
+                    { data: 5 },
                     {
-                        data: 0,
+                        data: 1,
                         render: function (data, type, row) {
                             return '<img src="../assets/pucpuc/splashart/' + data + '.png"/>';
                         }
@@ -86,15 +94,8 @@
                 ]
             });
         });
-
     </script>
-
-    <!-- Navigation Bar Script-->
-    <script> 
-        $(function () {
-            $("#navigationBar").load("navbar.html");
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -116,9 +117,10 @@
                     <div class="panel panel-default">
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table id="example" width="100%" class="table table-striped table-bordered table-hover" style="width: 100%;font-size: 16px;">
+                            <table id="pucpuc" width="100%" class="table table-striped table-bordered table-hover" style="font-size: 16px;">
                                 <thead>
                                     <tr>
+                                        <th>ID</th>
                                         <th>Name</th>
                                         <th>Character</th>
                                         <th>Attack</th>

@@ -1,6 +1,7 @@
 {
   "data": [
     [
+      "001",
       "hitagi01",
       "Hitagi 01",
       "Hitagi Senjogahara",
@@ -8,6 +9,7 @@
       "???"
     ],
     [
+      "002",
       "hitagi02",
       "Hitagi 02",
       "Hitagi Senjogahara",
@@ -15,6 +17,7 @@
       "???"
     ],
     [
+      "003",
       "hitagi03",
       "Hitagi 03",
       "Hitagi Senjogahara",
@@ -22,6 +25,7 @@
       "???"
     ],
     [
+      "004",
       "karen01",
       "Karen 01",
       "Karen Araragi",
@@ -29,6 +33,7 @@
       "???"
     ],
     [
+      "005",
       "koyomi01",
       "Koyomi 01",
       "Koyomi Araragi",
@@ -36,6 +41,7 @@
       "???"
     ],
     [
+      "006",
       "koyomi02",
       "Koyomi 02",
       "Koyomi Araragi",
@@ -43,6 +49,7 @@
       "???"
     ],
     [
+      "007",
       "mayoi01",
       "Mayoi 01",
       "Mayoi Hachikuji",
@@ -50,6 +57,7 @@
       "???"
     ],
     [
+      "008",
       "mayoi02",
       "Mayoi 02",
       "Mayoi Hachikuji",
@@ -57,6 +65,7 @@
       "???"
     ],
     [
+      "009",
       "meme01",
       "Meme 01",
       "Meme Oshino",
@@ -64,6 +73,7 @@
       "???"
     ],
     [
+      "010",
       "nadeko01",
       "Nadeko 01",
       "Nadeko ???",
@@ -71,6 +81,7 @@
       "???"
     ],
     [
+      "011",
       "nadeko02",
       "Nadeko 02",
       "Nadeko ???",
@@ -78,6 +89,7 @@
       "???"
     ],
     [
+      "012",
       "ougi01",
       "Ougi 01",
       "Ougi Oshino",
@@ -85,6 +97,7 @@
       "???"
     ],
     [
+      "013",
       "shinobu02",
       "Shinobu 02",
       "Shinobu Oshino",
@@ -92,6 +105,7 @@
       "???"
     ],
     [
+      "014",
       "shinobu03",
       "Shinobu 03",
       "Shinobu Oshino",
@@ -99,6 +113,7 @@
       "???"
     ],
     [
+      "015",
       "shinobu04",
       "Shinobu 04",
       "Shinobu Oshino",
@@ -106,6 +121,7 @@
       "???"
     ],
     [
+      "016",
       "sodachi01",
       "Sodachi 01",
       "Sodachi ???",
@@ -113,6 +129,7 @@
       "???"
     ],
     [
+      "017",
       "suruga01",
       "Suruga 01",
       "Suruga Kanbaru",
@@ -120,6 +137,7 @@
       "???"
     ],
     [
+      "018",
       "suruga02",
       "Suruga 02",
       "Suruga Kanbaru",
@@ -127,6 +145,7 @@
       "???"
     ],
     [
+      "019",
       "tsubasa01",
       "Tsubasa 01",
       "Tsubasa Hanekawa",
@@ -134,6 +153,7 @@
       "???"
     ],
     [
+      "020",
       "tsubasa02",
       "Tsubasa 02",
       "Tsubasa Hanekawa",
@@ -141,6 +161,7 @@
       "???"
     ],
     [
+      "021",
       "tsubasa04",
       "Tsubasa 04",
       "Tsubasa Hanekawa",
@@ -148,6 +169,7 @@
       "???"
     ],
     [
+      "022",
       "tsukihi01",
       "Tsukihi 01",
       "Tsukihi Araragi",
@@ -155,6 +177,7 @@
       "???"
     ],
     [
+      "023",
       "yotsugi01",
       "Yotsugi 01",
       "Yotsugi Ononoki",

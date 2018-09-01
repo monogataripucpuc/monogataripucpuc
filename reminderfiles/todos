@@ -1,6 +1,17 @@
-- increase font size for modal
-- state save with checkbox
-- center last row
-- new site for banners
-- new site for bosses
-- new site for items
+dashboard
+    - fill with something?!
+
+navigation bar
+    - remove search bar
+    
+scenes 
+    - overlay frame with card
+    - display stars for rarity (case with differnt img directions)
+
+pucpucs
+    - improve design of modal view
+        - increased font size
+        - last row in center
+    - implement state save function with checkbox for pucpucs and scenes
+
+change website to monogataripucpuc.github.io
