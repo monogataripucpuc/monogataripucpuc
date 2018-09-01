@@ -9,36 +9,36 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="img/ico" href="../assets/ui/favicon.png">
+    <link rel="icon" type="img/ico" href="assets/ui/favicon.png">
 
     <title>PucPucs</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- DataTables CSS -->
-    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- DataTables Responsive CSS -->
-    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- DataTables JavaScript -->
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -47,12 +47,12 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="dist/js/sb-admin-2.js"></script>
 
     <!-- Navigation Bar Script-->
     <script> 
         $(function () {
-            $("#navigationBar").load("../pages/navbar.html");
+            $("#navigationBar").load("pages/navbar.html");
         });
     </script>
 
@@ -60,7 +60,7 @@
     <script type="text/javascript" class="init">
         $(document).ready(function () {
             $('#pucpuc').DataTable({
-                ajax: "../sourcedata/pucpuc.txt",
+                ajax: "sourcedata/pucpuc.txt",
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({
@@ -79,7 +79,7 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="../assets/pucpuc/sprite/' + data[1] + '.png" width="50" height="50"/> ' + data[2];
+                            return '<img src="assets/pucpuc/sprite/' + data[1] + '.png" width="50" height="50"/> ' + data[2];
                         }
                     },
                     { data: 3 },
@@ -88,7 +88,7 @@
                     {
                         data: 1,
                         render: function (data, type, row) {
-                            return '<img src="../assets/pucpuc/splashart/' + data + '.png"/>';
+                            return '<img src="assets/pucpuc/splashart/' + data + '.png"/>';
                         }
                     }
                 ]
