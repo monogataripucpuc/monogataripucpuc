@@ -1,3 +1,23 @@
+<!-- Data Display Script-->
+<script type="text/javascript" class="init">
+    $(document).ready(function () {
+        $('#expItemsTable').DataTable({
+            ajax: "sourcedata/expItems.txt",
+            bFilter: false,
+            paging: false,
+            columns: [
+                {
+                    data: null,
+                    render: function (data, type, row) {
+                        return '<img src="assets/items/exp/' + data[0] + '.png" width="50"/> ' + data[1];
+                    }
+                },
+                { data: 2 }
+            ]
+        });
+    });
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <a data-toggle="collapse" data-parent="#accordion" href="#Experience" style="color: #333">
@@ -8,6 +28,21 @@
     </div>
     <div id="Experience" class="panel-collapse collapse">
         <div class="panel-body">
+            <table id="expItemsTable" width="100%" class="table-borderless" style="font-size: 16px;">
+                <thead>
+                    <tr style="display:none">
+                        <th>Item</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="padding-bottom: 10px">
+                        
+                    </tr>
+                </tbody>
+            </table>
+
+
             <img src="assets/items/exp/expitem01_M.png" width="50px" />
             <br>
             <img src="assets/items/exp/expitem02_M.png" width="50px" />
