@@ -11,7 +11,7 @@
 
     <link rel="icon" type="img/ico" href="../assets/ui/favicon.png">
 
-    <title>Banners</title>
+    <title>Items</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -52,18 +52,30 @@
     <!-- Navigation Bar Script-->
     <script> 
         $(function () {
-            $("#navigationBar").load("navbar.html");
+            $("#navigationBar").load("../pages/navbar.html");
         });
     </script>
 
     <!-- Banner Script-->
     <script> 
         $(function () {
-            $("#pucpucBanners").load("../pages/banners/pucpucBanners.html");
+            $("#expItems").load("../pages/items/expItems.html");
         });
 
         $(function () {
-            $("#sceneBanners").load("../pages/banners/sceneBanners.html");
+            $("#medalItems").load("../pages/items/medalItems.html");
+        });
+
+        $(function () {
+            $("#otherItems").load("../pages/items/otherItems.html");
+        });
+
+        $(function () {
+            $("#probItems").load("../pages/items/probItems.html");
+        });
+
+        $(function () {
+            $("#puzzleItems").load("../pages/items/puzzleItems.html");
         });
     </script>
 </head>
@@ -77,7 +89,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Banners</h1>
+                    <h1 class="page-header">Items</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -88,9 +100,16 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="panel-group" id="accordion">
-                                <div id="pucpucBanners"></div>
+                                <div id="expItems"></div>
                                 <br/>
-                                <div id="sceneBanners"></div>
+                                <div id="medalItems"></div>
+                                <br/>
+                                <div id="probItems"></div>
+                                <br/>
+                                <div id="puzzleItems"></div>
+                                <br/>
+                                <div id="otherItems"></div>
+                                <br/>
                             </div>
                         </div>
                         <!-- /.panel-body -->
