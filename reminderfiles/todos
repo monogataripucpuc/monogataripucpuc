@@ -4,12 +4,10 @@ dashboard
 scenes 
     - overlay frame with card
     - display stars for rarity (case with differnt img directions)
+    - implement state save function with checkbox
 
 pucpucs
-    - improve design of modal view
-        - increased font size
-        - last row in center
-    - implement state save function with checkbox for pucpucs and scenes
+    - implement state save function with checkbox
 
 new pages
     - ranking 

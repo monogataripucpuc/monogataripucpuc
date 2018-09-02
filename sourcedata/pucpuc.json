@@ -114,14 +114,6 @@
     ],
     [
       "015",
-      "shinobu04",
-      "Shinobu 04",
-      "Shinobu Oshino",
-      "?????",
-      "???"
-    ],
-    [
-      "016",
       "sodachi01",
       "Sodachi 01",
       "Sodachi ???",
@@ -129,7 +121,7 @@
       "???"
     ],
     [
-      "017",
+      "016",
       "suruga01",
       "Suruga 01",
       "Suruga Kanbaru",
@@ -137,7 +129,7 @@
       "???"
     ],
     [
-      "018",
+      "017",
       "suruga02",
       "Suruga 02",
       "Suruga Kanbaru",
@@ -145,7 +137,7 @@
       "???"
     ],
     [
-      "019",
+      "018",
       "tsubasa01",
       "Tsubasa 01",
       "Tsubasa Hanekawa",
@@ -153,7 +145,7 @@
       "???"
     ],
     [
-      "020",
+      "019",
       "tsubasa02",
       "Tsubasa 02",
       "Tsubasa Hanekawa",
@@ -161,15 +153,7 @@
       "???"
     ],
     [
-      "021",
-      "tsubasa04",
-      "Tsubasa 04",
-      "Tsubasa Hanekawa",
-      "?????",
-      "???"
-    ],
-    [
-      "022",
+      "020",
       "tsukihi01",
       "Tsukihi 01",
       "Tsukihi Araragi",
@@ -177,10 +161,26 @@
       "???"
     ],
     [
-      "023",
+      "021",
       "yotsugi01",
       "Yotsugi 01",
       "Yotsugi Ononoki",
+      "?????",
+      "???"
+    ],    
+    [
+      "022",
+      "shinobu04",
+      "Shinobu 04",
+      "Shinobu Oshino",
+      "?????",
+      "???"
+    ],
+    [
+      "023",
+      "tsubasa04",
+      "Tsubasa 04",
+      "Tsubasa Hanekawa",
       "?????",
       "???"
     ]

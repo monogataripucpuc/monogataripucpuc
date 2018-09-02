@@ -66,12 +66,23 @@
                         display: $.fn.dataTable.Responsive.display.modal({
                             header: function (row) {
                                 var data = row.data();
-                                return 'Details for ' + data[2];
+                                return '<img src="assets/pucpuc/sprite/' + data[1] + '.png" width="50" height="50"/> ' + 'Details for ' + data[2];
                             }
                         }),
-                        renderer: $.fn.dataTable.Responsive.renderer.tableAll({
-                            tableClass: 'table'
-                        })
+                        renderer: function (api, rowIdx, columns) {
+                            var data = $.map(columns, function (col, i) {
+                                return col.hidden ?
+                                    '<tr style="font-size: 16px;" data-dt-row="' + col.rowIndex + '" data-dt-column="' + col.columnIndex + '">' +
+                                    '<td width="50%">' + col.title + ':' + '</td> ' +
+                                    '<td width="50%">' + col.data + '</td>' +
+                                    '</tr>' :
+                                    '';
+                            }).join('');
+
+                            return data ?
+                                $('<table style="width: 100%"/>').append(data) :
+                                false;
+                        }
                     }
                 },
                 columns: [
@@ -85,6 +96,11 @@
                     { data: 3 },
                     { data: 4 },
                     { data: 5 },
+                    { data: 0 },
+                    { data: 2 },
+                    { data: 3 },
+                    { data: 4 },
+                    { data: 5 },
                     {
                         data: 1,
                         render: function (data, type, row) {
@@ -95,7 +111,7 @@
             });
         });
     </script>
-    
+
 </head>
 
 <body>
@@ -125,7 +141,12 @@
                                         <th>Character</th>
                                         <th>Attack</th>
                                         <th>Special</th>
-                                        <th class="none" style="display:none;"></th>
+                                        <th class="none" style="display:none;">ID</th>
+                                        <th class="none" style="display:none;">Name</th>
+                                        <th class="none" style="display:none;">Character</th>
+                                        <th class="none" style="display:none;">Attack</th>
+                                        <th class="none" style="display:none;">Special</th>
+                                        <th class="none" style="display:none;">Splashart</th>
                                     </tr>
                                 </thead>
                             </table>
