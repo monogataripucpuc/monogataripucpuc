@@ -1,3 +1,74 @@
+<!-- Data Display Script-->
+<script type="text/javascript" class="init">
+    $(document).ready(function () {
+        $('#tsubasaCat01Table').DataTable({
+            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat01Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#tsubasaCat02Table').DataTable({
+            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat02Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#tsubasaCat03Table').DataTable({
+            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat03Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#tsubasaCat03HTable').DataTable({
+            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat03HStory.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <a data-toggle="collapse" data-parent="#accordion" href="#TsubasaCat" style="color: #333">
@@ -20,7 +91,26 @@
                     </div>
                     <div id="TsubasaCat01" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="tsubasaCat01Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -35,7 +125,26 @@
                     </div>
                     <div id="TsubasaCat02" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="tsubasaCat02Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -50,7 +159,26 @@
                     </div>
                     <div id="TsubasaCat03" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="tsubasaCat03Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -65,7 +193,26 @@
                     </div>
                     <div id="TsubasaCat03H" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="tsubasaCat03HTable" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>

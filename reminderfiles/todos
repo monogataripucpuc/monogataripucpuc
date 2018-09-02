@@ -1,9 +1,6 @@
 dashboard
     - fill with something?!
 
-navigation bar
-    - remove search bar
-
 scenes 
     - overlay frame with card
     - display stars for rarity (case with differnt img directions)
@@ -13,11 +10,8 @@ pucpucs
         - increased font size
         - last row in center
     - implement state save function with checkbox for pucpucs and scenes
-    
-items/banners/story
-    - padding
 
-items
-    - place into table with invisible borders
+story
+    - give stars a nice image
 
 change website to monogataripucpuc.github.io

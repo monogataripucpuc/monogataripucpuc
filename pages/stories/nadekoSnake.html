@@ -1,3 +1,74 @@
+<!-- Data Display Script-->
+<script type="text/javascript" class="init">
+    $(document).ready(function () {
+        $('#nadekoSnake01Table').DataTable({
+            ajax: "sourcedata/stories/nadekoSnakeStory/nadekoSnake01Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#nadekoSnake02Table').DataTable({
+            ajax: "sourcedata/stories/nadekoSnakeStory/nadekoSnake02Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#nadekoSnake03Table').DataTable({
+            ajax: "sourcedata/stories/nadekoSnakeStory/nadekoSnake03Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#nadekoSnake03HTable').DataTable({
+            ajax: "sourcedata/stories/nadekoSnakeStory/nadekoSnake03HStory.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <a data-toggle="collapse" data-parent="#accordion" href="#NadekoSnake" style="color: #333">
@@ -20,7 +91,26 @@
                     </div>
                     <div id="NadekoSnake01" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="nadekoSnake01Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -35,7 +125,26 @@
                     </div>
                     <div id="NadekoSnake02" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="nadekoSnake02Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -50,7 +159,26 @@
                     </div>
                     <div id="NadekoSnake03" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="nadekoSnake03Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -65,7 +193,26 @@
                     </div>
                     <div id="NadekoSnake03H" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="nadekoSnake03HTable" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>

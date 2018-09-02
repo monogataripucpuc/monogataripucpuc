@@ -1,3 +1,57 @@
+<!-- Data Display Script-->
+<script type="text/javascript" class="init">
+    $(document).ready(function () {
+        $('#hitagiCrab01Table').DataTable({
+            ajax: "sourcedata/stories/hitagiCrabStory/hitagiCrab01Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#hitagiCrab02Table').DataTable({
+            ajax: "sourcedata/stories/hitagiCrabStory/hitagiCrab02Story.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#hitagiCrab02HTable').DataTable({
+            ajax: "sourcedata/stories/hitagiCrabStory/hitagiCrab02HStory.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <a data-toggle="collapse" data-parent="#accordion" href="#HitagiCrab" style="color: #333">
@@ -20,7 +74,26 @@
                     </div>
                     <div id="HitagiCrab01" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="hitagiCrab01Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -35,7 +108,26 @@
                     </div>
                     <div id="HitagiCrab02" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="hitagiCrab02Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -50,7 +142,26 @@
                     </div>
                     <div id="HitagiCrab02H" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <table id="hitagiCrab02HTable" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
