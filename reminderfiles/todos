@@ -4,6 +4,7 @@ dashboard
 scenes 
     - overlay frame with card
     - display stars for rarity (case with differnt img directions)
+        https://github.com/javiertoledo/bootstrap-rating-input
     - implement state save function with checkbox
 
 pucpucs

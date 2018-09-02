@@ -4,21 +4,21 @@
       "0001",
       "scn_cardS_bake01_0001",
       "Bake 01 0001",
-      "??",
+      "<span class=\"fa fa-star\"/><span class=\"fa fa-star\"/><span class=\"fa fa-star\"/><span class=\"fa fa-star-o\"/><span class=\"fa fa-star-o\"/>",
       "???"
     ],
     [
       "0002",
       "scn_cardS_bake01_0010",
       "Bake 01 0010",
-      "??",
+      "<span class=\"fa fa-star\"/><span class=\"fa fa-star\"/><span class=\"fa fa-star-o\"/><span class=\"fa fa-star-o\"/><span class=\"fa fa-star-o\"/>",
       "???"
     ],
     [
       "0003",
       "scn_cardS_bake01_0020",
       "Bake 01 0020",
-      "??",
+      "<span class=\"fa fa-star\"/><span class=\"fa fa-star\"/><span class=\"fa fa-star\"/><span class=\"fa fa-star\"/><span class=\"fa fa-star\"/>",
       "???"
     ]
   ]
