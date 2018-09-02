@@ -20,7 +20,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
   box-shadow: 0 0 3px #444;
   box-sizing: content-box;
   content: '+';
-  background-color: #31b131;
+  background-color: darkslategray;
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child.dataTables_empty:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child.dataTables_empty:before {
