@@ -69,7 +69,12 @@
                             return '<img src="assets/scene/card/' + data[1] + '.png" width="50" height="50"/> ' + data[2];
                         }
                     },
-                    { data: 3 },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<span class="fa fa-star-' + data[3] + ' ng-scope sorting_1"/>' + '<span style="display:none;>"' + data[3] + '</span>';
+                        }
+                    },
                     { data: 4 }
                 ]
             });
