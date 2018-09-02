@@ -1,8 +1,8 @@
 <!-- Data Display Script-->
 <script type="text/javascript" class="init">
     $(document).ready(function () {
-        $('#pucpucBannersTable').DataTable({
-            ajax: "sourcedata/banners/pucpucBanners.json",
+        $('#propItemsTable').DataTable({
+            ajax: "sourcedata/items/propItems.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -10,9 +10,10 @@
                 {
                     data: null,
                     render: function (data, type, row) {
-                        return '<img src="assets/banners/pucpuc/' + data[0] + '.png" style="padding:5px;"/> ';
+                        return '<img src="assets/items/props/' + data[0] + '.png" width="50px" style="padding:5px; padding-right:10px"/> ';
                     }
-                }
+                },
+                { data: 1 }
             ]
         });
     });
@@ -20,18 +21,19 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#pucpuc" style="color: #333">
+        <a data-toggle="collapse" data-parent="#accordion" href="#props" style="color: #333">
             <h4 class="panel-title">
-                <img src="assets/ui/ticketpucpuc.png" width="25px" height="25px"> PucPuc
+                <img src="assets/items/props/prop_general01_M.png" width="25px" height="25px"> Props
             </h4>
         </a>
     </div>
-    <div id="pucpuc" class="panel-collapse collapse">
+    <div id="props" class="panel-collapse collapse">
         <div class="panel-body">
-            <table id="pucpucBannersTable" class="table-borderless">
+            <table id="propItemsTable" class="table-borderless" style="font-size: 16px;">
                 <thead>
                     <tr style="display:none">
-                        <th>Image</th>
+                        <th>Item</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
             </table>

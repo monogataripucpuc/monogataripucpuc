@@ -1,15 +1,40 @@
+<!-- Data Display Script-->
+<script type="text/javascript" class="init">
+    $(document).ready(function () {
+        $('#sceneBannersTable').DataTable({
+            ajax: "sourcedata/banners/sceneBanners.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            columns: [
+                {
+                    data: null,
+                    render: function (data, type, row) {
+                        return '<img src="assets/banners/scene/' + data[0] + '.png" style="padding:5px;"/> ';
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#Scene" style="color: #333">
+        <a data-toggle="collapse" data-parent="#accordion" href="#scene" style="color: #333">
             <h4 class="panel-title">
                 <img src="assets/ui/ticketscene.png" width="25px" height="25px"> Scene
             </h4>
         </a>
     </div>
-    <div id="Scene" class="panel-collapse collapse">
+    <div id="scene" class="panel-collapse collapse">
         <div class="panel-body">
-            <img src="assets/banner/scene/gacha_scene.png" width="75%" />
-            <img src="assets/banner/scene/gacha_scene_0829.png" width="75%" />
+            <table id="sceneBannersTable" class="table-borderless">
+                <thead>
+                    <tr style="display:none" width="100%">
+                        <th>Image</th>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </div>
 </div>

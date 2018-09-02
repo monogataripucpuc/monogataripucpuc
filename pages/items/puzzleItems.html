@@ -1,25 +1,42 @@
+<!-- Data Display Script-->
+<script type="text/javascript" class="init">
+    $(document).ready(function () {
+        $('#puzzleItemsTable').DataTable({
+            ajax: "sourcedata/items/puzzleItems.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            columns: [
+                {
+                    data: null,
+                    render: function (data, type, row) {
+                        return '<img src="assets/items/puzzles/' + data[0] + '.png" width="50px" style="padding:5px; padding-right:10px"/> ';
+                    }
+                },
+                { data: 1 }
+            ]
+        });
+    });
+</script>
+
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#Puzzles" style="color: #333">
+        <a data-toggle="collapse" data-parent="#accordion" href="#puzzles" style="color: #333">
             <h4 class="panel-title">
                 <img src="assets/items/puzzles/puzzle_item_chest_M.png" width="25px" height="25px"> Puzzles
             </h4>
         </a>
     </div>
-    <div id="Puzzles" class="panel-collapse collapse">
+    <div id="puzzles" class="panel-collapse collapse">
         <div class="panel-body">
-            <img src="assets/items/puzzles/puzzle_item_chest_M.png" width="50px" />
-            <br>
-            <img src="assets/items/puzzles/puzzle_item_combo_M.png" width="50px" />
-            <br>
-            <img src="assets/items/puzzles/puzzle_item_intimacy_M.png" width="50px" />
-            <br>
-            <img src="assets/items/puzzles/puzzle_item_kind_M.png" width="50px" />
-            <br>
-            <img src="assets/items/puzzles/puzzle_item_score_M.png" width="50px" />
-            <br>
-            <img src="assets/items/puzzles/puzzle_item_time_M.png" width="50px" />
-            <br>
+            <table id="puzzleItemsTable" class="table-borderless" style="font-size: 16px;">
+                <thead>
+                    <tr style="display:none">
+                        <th>Item</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </div>
 </div>

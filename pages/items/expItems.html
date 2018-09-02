@@ -2,17 +2,18 @@
 <script type="text/javascript" class="init">
     $(document).ready(function () {
         $('#expItemsTable').DataTable({
-            ajax: "sourcedata/expItems.txt",
+            ajax: "sourcedata/items/expItems.json",
             bFilter: false,
             paging: false,
+            info: false,
             columns: [
                 {
                     data: null,
                     render: function (data, type, row) {
-                        return '<img src="assets/items/exp/' + data[0] + '.png" width="50"/> ' + data[1];
+                        return '<img src="assets/items/exp/' + data[0] + '.png" width="50px" style="padding:5px; padding-right:10px"/> ';
                     }
                 },
-                { data: 2 }
+                { data: 1 }
             ]
         });
     });
@@ -20,47 +21,22 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#Experience" style="color: #333">
+        <a data-toggle="collapse" data-parent="#accordion" href="#experience" style="color: #333">
             <h4 class="panel-title">
                 <img src="assets/items/exp/expitem01_M.png" width="25px" height="25px"> Experience
             </h4>
         </a>
     </div>
-    <div id="Experience" class="panel-collapse collapse">
+    <div id="experience" class="panel-collapse collapse">
         <div class="panel-body">
-            <table id="expItemsTable" width="100%" class="table-borderless" style="font-size: 16px;">
+            <table id="expItemsTable" class="table-borderless" style="font-size: 16px;">
                 <thead>
                     <tr style="display:none">
                         <th>Item</th>
                         <th>Description</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr style="padding-bottom: 10px">
-                        
-                    </tr>
-                </tbody>
             </table>
-
-
-            <img src="assets/items/exp/expitem01_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/expitem02_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/expitem03_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/prop_enhance01_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/prop_enhance02_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/prop_enhance03_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/pucpiece_hitagi_normal_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/pucpiece_rainbow_M.png" width="50px" />
-            <br>
-            <img src="assets/items/exp/sceneitem05_M.png" width="50px" />
-            <br>
         </div>
     </div>
 </div>
