@@ -92,6 +92,9 @@
                 dataType: 'json',
                 timeout: 50000,
                 success: function (data, status) {
+                    for (var i in data){
+                        alert(i);
+                    }
                     alert(data[1]);
                 }
             });
