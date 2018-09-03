@@ -86,40 +86,15 @@
 
     <script type="text/javascript" class="init">
         $(document).ready(function () {
-            var imagedata = "sourcedata/scene.json";
-            for (var i in imagedata){
-                alert(i);
-            }
-            
-            var content = '';
-            var units = [];
 
-            for (var i in window.chara) {
-                var unit = window.chara[i];
-
-                var id = unit['id'];
-                var asset = unit['assetid'];
-                var name = unit['name'] + ", " + unit['subname'];
-                var type = unit['type'];
-                var affi = unit['affi'].split(',');
-                var affi1 = affi[0];
-                var affi2 = affi[1];
-                var cost = unit['cost'];
-                var rare = unit['rarity'];
-                var chakra = unit['chakra'];
-                var range = unit['range'];
-                var hp = unit['hp'];
-                var atk = unit['atk'];
-
-                if (units.indexOf(chara[0]) == -1) {
-                    units.push(unit[0]);
-                    content += _createCard(id, asset, name, type, affi1, affi2, cost, rare, chakra, range, hp, atk);
+            $.ajax({
+                url: 'https://baqfish.github.io/MonogatariPucPuc/sourcedata/scene.json',
+                dataType: 'json',
+                timeout: 50000,
+                success: function (data, status) {
+                    alert(data);
                 }
-            }
-
-            console.log(i, window.chara[i]);
-
-            $('.cards').html(content);
+            });
         });
     </script>
 
