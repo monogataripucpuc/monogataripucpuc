@@ -86,8 +86,10 @@
 
     <script type="text/javascript" class="init">
         $(document).ready(function () {
-            alert(document.getElementById(1));
-            
+            for (var i in document) {
+            alert(i);
+            };
+
             ajax: "sourcedata/scene.json";
             alert(data[1])
 
