@@ -99,9 +99,11 @@
     </script>
 
     <script type="text/javascript" class="init">
-        $.getJSON('/sourcedata/scene.json', function (jd) {
-            $('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
-            $('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
+        $(document).ready(function () {
+            $.getJSON('/sourcedata/scene.json', function (jd) {
+                $('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
+                $('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
+            });
         });
     </script>
 
