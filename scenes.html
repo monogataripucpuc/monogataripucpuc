@@ -99,7 +99,10 @@
     </script>
 
     <script type="text/javascript" class="init">
-        $('#imagecol').load('/sourcedata/scene.json');
+        $.getJSON('/sourcedata/scene.json', function (jd) {
+            $('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
+            $('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
+        });
     </script>
 
     <style type="text/css">
