@@ -86,16 +86,13 @@
 
     <script type="text/javascript" class="init">
         $(document).ready(function () {
-
-            $.ajax({
-                url: 'https://baqfish.github.io/MonogatariPucPuc/sourcedata/scene.json',
+            $('#imagecol').ajax({
+                url: '/sourcedata/scene.json',
                 dataType: 'json',
-                timeout: 50000,
                 success: function (data, status) {
                     for (var i in data){
-                        alert(data[i]);
+                        return data[i];
                     }
-                    alert(data[1]);
                 }
             });
         });
@@ -143,6 +140,7 @@
                                     </tr>
                                 </thead>
                             </table>
+                            <div id="imagecol"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
