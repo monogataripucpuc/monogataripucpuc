@@ -66,8 +66,8 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<div class="bgpicture" style="background-image: url(assets/scene/frame/' + data[3] + '.png),' +
-                                    'url(assets/scene/card/' + data[1] + '.png);"></div>' + 
+                            return '<img src="assets/scene/card/' + data[1] + '.png" class="under"/>' +
+                                '<img src="assets/scene/frame/' + data[3] + '.png" class="over"/>' +
                                 '<span style="display:none;>"' + data[2] + '</span>';
                         }
                     },
@@ -85,10 +85,20 @@
     </script>
 
     <style type="text/css">
-        .bgpicture {
-            background-size: cover;
-            background-position: center;
-            height: 83px;
+        .under {
+            position: absolute;
+            z-index: 2;
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+
+        .over {
+            position: relative;
+            z-index: 3;
+            height: 90px;
+            display: block;
+            margin: auto;
         }
 
         .odd {
@@ -129,6 +139,9 @@
                                         <th>Effect</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <tr heigth="100px"></tr>
+                                </tbody>
                             </table>
                         </div>
                         <!-- /.panel-body -->
