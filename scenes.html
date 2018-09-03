@@ -105,7 +105,7 @@
         $(document).ready(function () {
             $.getJSON("sourcedata/scene.json", function (result) {
                 $.each(result, function (i, field) {
-                    $('#imagecol').append(field[1] + " dummy ");
+                    $('#imagecol').append(field[i][1] + " dummy ");
                 });
                 //$('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
                 //$('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
