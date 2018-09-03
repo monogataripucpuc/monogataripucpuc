@@ -67,7 +67,7 @@
                         data: null,
                         render: function (data, type, row) {
                             return '<img src="assets/scene/card/' + data[1] + '.png" height="30px" class="under"/>' +
-                                '<img src="assets/scene/frame/' + data[3] + '.png" height="30px" class="over"/>' + 
+                                '<img src="assets/scene/frame/' + data[3] + '.png" height="30px" class="over"/>' +
                                 '<span style="display:none;>"' + data[2] + '</span>';
                         }
                     },
@@ -81,6 +81,43 @@
                     { data: 4 }
                 ]
             });
+        });
+    </script>
+
+    <script type="text/javascript" class="init">
+        $(document).ready(function () {
+            ajax: "sourcedata/scene.json";
+            alert(data[1])
+
+            var content = '';
+            var units = [];
+
+            for (var i in window.chara) {
+                var unit = window.chara[i];
+
+                var id = unit['id'];
+                var asset = unit['assetid'];
+                var name = unit['name'] + ", " + unit['subname'];
+                var type = unit['type'];
+                var affi = unit['affi'].split(',');
+                var affi1 = affi[0];
+                var affi2 = affi[1];
+                var cost = unit['cost'];
+                var rare = unit['rarity'];
+                var chakra = unit['chakra'];
+                var range = unit['range'];
+                var hp = unit['hp'];
+                var atk = unit['atk'];
+
+                if (units.indexOf(chara[0]) == -1) {
+                    units.push(unit[0]);
+                    content += _createCard(id, asset, name, type, affi1, affi2, cost, rare, chakra, range, hp, atk);
+                }
+            }
+
+            console.log(i, window.chara[i]);
+
+            $('.cards').html(content);
         });
     </script>
 
