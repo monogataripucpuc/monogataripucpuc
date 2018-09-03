@@ -84,8 +84,10 @@
         });
     </script>
 
+
     <script type="text/javascript" class="init">
-        $(document).ready(function () {
+    /*    
+    $(document).ready(function () {
             $.ajax({
                 url: 'sourcedata/scene.json',
                 dataType: 'json',
@@ -96,13 +98,17 @@
                 }
             });
         });
+    */
     </script>
 
     <script type="text/javascript" class="init">
         $(document).ready(function () {
-            $.getJSON("sourcedata/scene.json", function (jd) {
-                $('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
-                $('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
+            $.getJSON("sourcedata/scene.json", function (result) {
+                $.each(result, function (i, field) {
+                    $('#imagecol').append(field + " ");
+                });
+                //$('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
+                //$('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
             });
         });
     </script>
