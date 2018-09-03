@@ -66,8 +66,8 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[1] + '.png" height="30px" class="under"/>' +
-                                '<img src="assets/scene/frame/' + data[3] + '.png" height="30px" class="over"/>' +
+                            return '<img src="assets/scene/card/' + data[1] + '.png" class="under"/>' +
+                                '<img src="assets/scene/frame/' + data[3] + '.png" class="over"/>' +
                                 '<span style="display:none;>"' + data[2] + '</span>';
                         }
                     },
@@ -84,45 +84,29 @@
         });
     </script>
 
-
-    <script type="text/javascript" class="init">
-    /*    
-    $(document).ready(function () {
-            $.ajax({
-                url: 'sourcedata/scene.json',
-                dataType: 'json',
-                success: function (data, status) {
-                    for (var i in data) {
-                        return data[i];
-                    }
-                }
-            });
-        });
-    */
-    </script>
-
-    <script type="text/javascript" class="init">
-        $(document).ready(function () {
-            $.getJSON("sourcedata/scene.json", function (result) {
-                $.each(result, function (i, field) {
-                    $('#imagecol').append(i + " d1 " + field  + " dummy ");
-                });
-                
-                //$('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
-                //$('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
-            });
-        });
-    </script>
-
     <style type="text/css">
         .under {
             position: absolute;
             z-index: 2;
+            width: 100px;
+            display: block;
+            margin: auto;
         }
 
         .over {
-            position: absolute;
+            position: relative;
             z-index: 3;
+            height: 90px;
+            display: block;
+            margin: auto;
+        }
+
+        .odd {
+            height: 100px;
+        }
+
+        .even {
+            height: 100px;
         }
     </style>
 </head>
@@ -155,8 +139,10 @@
                                         <th>Effect</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <tr heigth="100px"></tr>
+                                </tbody>
                             </table>
-                            <div id="imagecol"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
