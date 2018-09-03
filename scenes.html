@@ -87,7 +87,7 @@
     <script type="text/javascript" class="init">
         $(document).ready(function () {
             $.ajax({
-                url: '/sourcedata/scene.json',
+                url: 'sourcedata/scene.json',
                 dataType: 'json',
                 success: function (data, status) {
                     for (var i in data) {
@@ -100,7 +100,7 @@
 
     <script type="text/javascript" class="init">
         $(document).ready(function () {
-            $.getJSON('/sourcedata/scene.json', function (jd) {
+            $.getJSON('sourcedata/scene.json', function (jd) {
                 $('#imagecol').html('<p> Name: ' + jd[1] + '</p>');
                 $('#imagecol').append('<p> Sex: ' + jd[2] + '</p>');
             });
