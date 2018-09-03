@@ -73,7 +73,8 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/rarity/' + data[3] + '.png" style="display:block; margin:auto;"/>' + '<span style="display:none;>"' + data[3] + '*</span>';
+                            return '<img src="assets/scene/rarity/' + data[3] + '.png" style="display:block; margin:auto;"/>' +
+                                '<span style="display:none;>"' + data[3] + '*</span>';
                         }
                     },
                     { data: 4 }
@@ -85,16 +86,12 @@
     <style type="text/css">
         .under {
             position: absolute;
-            left: 0px;
-            top: 0px;
-            z-index: -1;
+            z-index: 2;
         }
 
         .over {
             position: absolute;
-            left: 40px;
-            top: 10px;
-            z-index: -1;
+            z-index: 3;
         }
     </style>
 </head>
