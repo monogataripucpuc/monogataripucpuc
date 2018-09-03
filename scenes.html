@@ -86,16 +86,20 @@
 
     <script type="text/javascript" class="init">
         $(document).ready(function () {
-            $('#imagecol').ajax({
+            $.ajax({
                 url: '/sourcedata/scene.json',
                 dataType: 'json',
                 success: function (data, status) {
-                    for (var i in data){
+                    for (var i in data) {
                         return data[i];
                     }
                 }
             });
         });
+    </script>
+
+    <script type="text/javascript" class="init">
+        $('#imagecol').load('/sourcedata/scene.json');
     </script>
 
     <style type="text/css">
