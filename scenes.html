@@ -66,7 +66,8 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[1] + '.png" width="50" height="50"/> ' + data[2];
+                            return '<img src="assets/scene/card/' + data[1] + '.png" width="50" height="50" class="under"/>' + 
+                                   '<img src="assets/scene/frame/' + data[3] + '.png" width="50" height="50" class="over"/>' + data[2];
                         }
                     },
                     {
@@ -80,6 +81,24 @@
             });
         });
     </script>
+
+    <style type="text/css">
+        .under {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+
+        .over {
+            position: absolute;
+            left: 40px;
+            top: 10px;
+            z-index: -1;
+        }
+    </style>    
+
+<img src="https://tafttest.com/184x46.png" width="184" height="46" class="under" />
 </head>
 
 <body>
