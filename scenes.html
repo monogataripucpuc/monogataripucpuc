@@ -67,7 +67,8 @@
                         data: null,
                         render: function (data, type, row) {
                             return '<img src="assets/scene/card/' + data[1] + '.png" height="30px" class="under"/>' +
-                                '<img src="assets/scene/frame/' + data[3] + '.png" height="30px" class="over"/>' + data[2];
+                                '<img src="assets/scene/frame/' + data[3] + '.png" height="30px" class="over"/>' + 
+                                '<span style="display:none;>"' + data[2] + '</span>';
                         }
                     },
                     {
