@@ -67,7 +67,8 @@
                         data: null,
                         render: function (data, type, row) {
                             return '<div class="bgpicture" style="background-image: url(assets/scene/frame/' + data[2] + '.png),' +
-                                'url(assets/scene/largecard/' + data[1] + '.png);"></div>';
+                                'url(assets/scene/largecard/' + data[1] + '.png);"></div>' +
+                                '<span style="display:none;>"' + data[5] + '</span>';
                         }
                     },
                     {
@@ -77,8 +78,7 @@
                                 '<span style="display:none;>"' + data[2] + '*</span>';
                         }
                     },
-                    { data: 3 },
-                    { data: 4 }
+                    { data: 5 }
                 ]
             });
         });
@@ -89,7 +89,7 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            height: 83px, 70px;
+            height: 83px;
         }
 
         .odd {
@@ -128,7 +128,6 @@
                                         <th>Name</th>
                                         <th>Rarity</th>
                                         <th>Effect</th>
-                                        <th class="none" style="display:none;">Tags</th>
                                     </tr>
                                 </thead>
                             </table>
