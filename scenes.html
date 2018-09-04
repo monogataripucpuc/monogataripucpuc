@@ -66,8 +66,8 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<div class="bgpicture" style="background-image: url(assets/scene/frame/' + data[3] + '.png);"></div>' +
-                                '<div class="bgpictureunder" style="background-image: url(assets/scene/largecard/' + data[1] + '.png);"></div>' +
+                            return '<div class="bgpicture" style="background-image: url(assets/scene/frame/' + data[3] + '.png),' +
+                                'url(assets/scene/largecard/' + data[1] + '.png);"></div>' +
                                 '<span style="display:none;>"' + data[2] + '</span>';
                         }
                     },
@@ -89,14 +89,7 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            height: 83px;
-        }
-
-        .bgpictureunder {
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 70px;
+            height: 83px, 70px;
         }
 
         .odd {
