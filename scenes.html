@@ -61,13 +61,33 @@
         $(document).ready(function () {
             $('#scene').DataTable({
                 ajax: "sourcedata/scene.json",
+                responsive: {
+                    details: {
+                        display: $.fn.dataTable.Responsive.display.modal({
+
+                        }),
+                        renderer: function (api, rowIdx, columns) {
+                            var data = $.map(columns, function (col, i) {
+                                return col.hidden ?
+                                    '<tr style="font-size: 16px;" data-dt-row="' + col.rowIndex + '" data-dt-column="' + col.columnIndex + '">' +
+                                    '<td>' + col.data + '</td>' +
+                                    '</tr>' :
+                                    '';
+                            }).join('');
+
+                            return data ?
+                                $('<table style="margin: auto;"/>').append(data) :
+                                false;
+                        }
+                    }
+                },
                 columns: [
                     { data: 0 },
                     {
                         data: null,
                         render: function (data, type, row) {
                             return '<div class="bgframe" style="background-image: url(assets/scene/frame/' + data[2] + '.png);"></div>' +
-                                '<div class="bgpicture" style="background-image: url(assets/scene/largecard/' + data[1] + '.png);"></div>' +
+                                '<div class="bgpicture" style="background-image: url(assets/scene/card/' + data[1] + '.png);"></div>' +
                                 '<span style="display:none;>"' + data[4] + '</span>';
                         }
                     },
@@ -78,7 +98,13 @@
                                 '<span style="display:none;>"' + data[2] + '*</span>';
                         }
                     },
-                    { data: 3 }
+                    { data: 3 },
+                    {
+                        data: 1,
+                        render: function (data, type, row) {
+                            return '<img width="100%" src="assets/scene/largecard/' + data + '.png"/>';
+                        }
+                    }
                 ]
             });
         });
@@ -136,6 +162,7 @@
                                         <th>Name</th>
                                         <th>Rarity</th>
                                         <th>Effect</th>
+                                        <th class="none" style="display:none;">Splashart</th>
                                     </tr>
                                 </thead>
                             </table>
