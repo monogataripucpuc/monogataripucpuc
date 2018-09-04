@@ -1,12 +1,9 @@
 dashboard
     - fill with something?!
 
-scenes 
-    - overlay frame with card
+scenes / pucpucs
     - implement state save function with checkbox
-
-pucpucs
-    - implement state save function with checkbox
+    - keep columns hidden if table is too narrow
 
 new pages
     - ranking 
