@@ -102,7 +102,7 @@
                     {
                         data: 1,
                         render: function (data, type, row) {
-                            return '<img width="100%" src="assets/scene/largecard/' + data + '.png"/>';
+                            return '<img width="100%" src="assets/scene/card/' + data + '.png"/>';
                         }
                     }
                 ]
@@ -114,6 +114,7 @@
         .bgpicture {
             background-position: center;
             background-repeat: no-repeat;
+            background-size: cover;
             height: 77px;
             width: 115px;
             margin: auto;
@@ -122,12 +123,14 @@
         .bgframe {
             height: 83px;
             background-repeat: no-repeat;
+            background-size: cover;
             position: absolute;
-            width: 115px;
-            left: 30px;
-            right: 0;
             margin: auto;
-            top: 17px;
+            width: 115px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 5px;
         }
 
         td {
