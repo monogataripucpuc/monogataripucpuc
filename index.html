@@ -57,6 +57,25 @@
         });
     </script>
 
+    <!-- News Script-->
+    <script> 
+        $(function () {
+            $("#news").load("pages/news/news.html");
+        });
+    </script>
+
+    <!-- News Style -->
+    <style type="text/css">
+        .newsimage {
+            width: 70%;
+            padding-bottom: 10px;
+            max-width: 500px;
+        }
+
+        .newsblock {
+        }
+    </style>
+
 </head>
 
 <body>
@@ -71,58 +90,13 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <a data-toggle="collapse" data-parent="#accordion" href="#ShrineCompetitionFestival" style="color: #333">
-                    <h4 class="panel-title">
-                        <img src="assets/events/shrinecompetitionfestival/thumbnail.png" width="25px" height="25px"> New Event! Shrine Competition Festival!
-                    </h4>
-                </a>
-
-            </div>
-            <div id="ShrineCompetitionFestival" class="panel-collapse" style="text-align: center;max-width: 600px;min-width: 200px;margin: auto;">
-                <div class="panel-body">
-                    <div class="panel-group" id="ShrineCompetitionFestivalAccordion">
-                        <img src="assets/events/shrinecompetitionfestival/banner.png" width="70%">
-                        <div>
-                            The event will last from September 3 ~ September 17 23:59.
-                            </br>
-                            The exchange deadline will be until September 24 23:59.
-                            </br>
-                            The Treasure Box will appear after clearing Hitagi Club 02-001.
-                            </br>
-                            Only users that have completed Hitagi Club 01-003 can participate.
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="panel-group" id="accordion">
+                            <div id="news"></div>
                         </div>
-                        </br>
-                        </br>
-                        <img src="assets/events/shrinecompetitionfestival/exchange.png" width="70%">
-                        <div>
-                            Collect "Cotton Candy" and "Rings" from various places ingame and exchange them for event-only scenes and items at the exchange
-                            place!
-                        </div>
-                        </br>
-                        </br>
-                        <img src="assets/events/shrinecompetitionfestival/collectmap.png" width="70%">
-                        <div>
-                            Tap your PucPucs in town to get "Rings" for the event.
-                            </br>
-                            "Hanekawa Tsubasa Summer Style" and "Oshino Shinobu Summer Style" give more rings when you tap them.
-                            </br>
-                            Clear event missions that are added every day to collect more "Cotton Candy".
-                        </div>
-                        </br>
-                        </br>
-                        <img src="assets/events/shrinecompetitionfestival/collectpuzzle.png" width="70%">
-                        <div>
-                            You can also get "Cotton Candy" and "Rings" from the treasure box that appears during the puzzles.
-                            </br>
-                            Ranking event held for "gorgeous compensation".
-                            </br>
-                            The Ranking Event is scheduled to be held between 12:00 September 10 and September 16 23:59.
-                        </div>
-                        </br>
-                        </br>
-                        <a href="https://monogatari-pucpuc.jp/news/?id=48257">Official Site</a>
                     </div>
                 </div>
             </div>
