@@ -1,16 +1,7 @@
 {
     "data": [
-        [
-            "free_puc_gem_M",
-            "Currency for Scenes and Puzzles"
-        ],
-        [
-            "free_puc_coin_M",
-            "Currency for Scenes and Experience"
-        ],
-        [
-            "heart_M",
-            "Stamina"
-        ]
+        ["free_puc_gem_M","Currency for Scenes and Puzzles"],
+        ["free_puc_coin_M","Currency for Scenes and Experience"],
+        ["heart_M","Stamina"]
     ]
 }

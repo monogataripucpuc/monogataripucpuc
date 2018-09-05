@@ -1,5 +1,5 @@
 dashboard
-    - fill with something?!
+    - news section
 
 scenes / pucpucs
     - implement state save function with checkbox
@@ -9,6 +9,5 @@ new pages
     - team suggestions
 
 general
-    - remove .html
-
-change website to monogataripucpuc.github.io
+    - remove .html by removing it from href in navbar.html and adding the file to .gitignore after first push
+    - change website to monogataripucpuc.github.io
