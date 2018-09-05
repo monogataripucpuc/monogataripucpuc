@@ -3,10 +3,12 @@ dashboard
 
 scenes / pucpucs
     - implement state save function with checkbox
-    - keep columns hidden if table is too narrow
 
 new pages
     - ranking 
     - team suggestions
+
+general
+    - remove .html
 
 change website to monogataripucpuc.github.io

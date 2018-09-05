@@ -64,7 +64,10 @@
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({
-
+                            header: function (row) {
+                                var data = row.data();
+                                return data[3];
+                            }
                         }),
                         renderer: function (api, rowIdx, columns) {
                             var data = $.map(columns, function (col, i) {
