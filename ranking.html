@@ -56,6 +56,69 @@
         });
     </script>
 
+    <!-- Data Display Script-->
+    <script type="text/javascript" class="init">
+        $(document).ready(function () {
+            $('#ranking').DataTable({
+                ajax: "sourcedata/ranking.json",
+                bFilter: false,
+                paging: false,
+                info: false,
+                ordering: false,
+                scrollX: true,
+                columns: [
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<div style="font-weight: bold;">' + data[0] + '</div>';
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<li><img src="assets/ranking/rewards/' + data[1] + '.png" width="25px"/> ' + data[2] + 'x</li>' +
+                                '<li><img src="assets/ranking/rewards/' + data[3] + '.png" width="25px"/> ' + data[4] + 'x</li>' +
+                                '<li><img src="assets/ranking/rewards/' + data[5] + '.png" width="25px"/> ' + data[6] + 'x</li>';
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<li><img src="assets/ranking/rewards/' + data[7] + '.png" width="25px"/> ' + data[8] + 'x</li>' +
+                                '<li><img src="assets/ranking/rewards/' + data[9] + '.png" width="25px"/> ' + data[10] + 'x</li>';
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<li><img src="assets/ranking/rewards/' + data[11] + '.png" width="25px"/> ' + data[12] + 'x</li>';
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<li><img src="assets/ranking/rewards/' + data[13] + '.png" width="25px"/> ' + data[14] + 'x</li>' +
+                                '<li><img src="assets/ranking/rewards/' + data[15] + '.png" width="25px"/> ' + data[16] + 'x</li>';
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<li><img src="assets/ranking/rewards/' + data[17] + '.png" width="25px"/> ' + data[18] + 'x</li>' +
+                                '<li><img src="assets/ranking/rewards/' + data[19] + '.png" width="25px"/> ' + data[20] + 'x</li>';
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<li><img src="assets/ranking/rewards/' + data[21] + '.png" width="25px"/> ' + data[22] + 'x</li>';
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
     <style type="text/css">
         li {
             list-style: none;
@@ -82,171 +145,28 @@
                     <div class="panel panel-default">
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="panel-group" id="accordion">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th width="15%"></th>
-                                                <th width="45%" colspan="3">
-                                                    Pick Up Units
-                                                </th>
-                                                <th width="40%" colspan="3">
-                                                    None Pick Up Units
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th></th>
-                                                <th>S</th>
-                                                <th>A</th>
-                                                <th>B</th>
-                                                <th>S</th>
-                                                <th>A</th>
-                                                <th>B</th>
-                                            </tr>
-                                            <tr>
-                                                <th>#1</th>
-                                                <td>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/pucpucexp.png" width="25px" /> 10x
-                                                    </li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/coin.png" width="25px" /> 20x
-                                                    </li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/rankingmedal.png" width="25px" /> 30x
-                                                    </li>
-                                                </td>
-                                                <td>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/pucpucexp.png" width="25px" /> 10x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/coin.png" width="25px" /> 20x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/rankingmedal.png" width="25px" /> 30x</li>
-                                                </td>
-                                                <td>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/pucpucexp.png" width="25px" /> 10x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/coin.png" width="25px" /> 20x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/rankingmedal.png" width="25px" /> 30x</li>
-                                                </td>
-                                                <td>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/pucpucexp.png" width="25px" /> 10x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/coin.png" width="25px" /> 20x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/rankingmedal.png" width="25px" /> 30x</li>
-                                                </td>
-                                                <td>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/pucpucexp.png" width="25px" /> 10x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/coin.png" width="25px" /> 20x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/rankingmedal.png" width="25px" /> 30x</li>
-                                                </td>
-                                                <td>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/pucpucexp.png" width="25px" /> 10x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/coin.png" width="25px" /> 20x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/rankingmedal.png" width="25px" /> 30x</li>
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <th>#2-3</th>
-                                                <td>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/pucpucexp.png" width="25px" /> 10x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/coin.png" width="25px" /> 20x</li>
-                                                    <li>
-                                                        <img src="assets/ranking/rewards/rankingmedal.png" width="25px" /> 30x</li>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th>#4-10</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th>#11-100</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>#101-200</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>#201-300</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>#301-500</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>#501-750</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>#751-9999</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <table id="ranking" width="100%" class="table table-striped table-bordered table-hover" style="font-size: 16px;">
+                                <thead>
+                                    <tr>
+                                        <th width="15%"></th>
+                                        <th width="45%" colspan="3">
+                                            Pick Up Units
+                                        </th>
+                                        <th width="40%" colspan="3">
+                                            None Pick Up Units
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th>S</th>
+                                        <th>A</th>
+                                        <th>B</th>
+                                        <th>S</th>
+                                        <th>A</th>
+                                        <th>B</th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                         <!-- /.panel-body -->
                     </div>
