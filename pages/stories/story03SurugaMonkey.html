@@ -1,8 +1,8 @@
 <!-- Data Display Script-->
 <script type="text/javascript" class="init">
     $(document).ready(function () {
-        $('#tsubasaCat01Table').DataTable({
-            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat01Story.json",
+        $('#surugaMonkey01Table').DataTable({
+            ajax: "sourcedata/stories/story03SurugaMonkey/story03SurugaMonkey01.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -19,8 +19,8 @@
     });
 
     $(document).ready(function () {
-        $('#tsubasaCat02Table').DataTable({
-            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat02Story.json",
+        $('#surugaMonkey02Table').DataTable({
+            ajax: "sourcedata/stories/story03SurugaMonkey/story03SurugaMonkey02.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -37,8 +37,8 @@
     });
 
     $(document).ready(function () {
-        $('#tsubasaCat03Table').DataTable({
-            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat03Story.json",
+        $('#surugaMonkey03Table').DataTable({
+            ajax: "sourcedata/stories/story03SurugaMonkey/story03SurugaMonkey03.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -55,44 +55,8 @@
     });
 
     $(document).ready(function () {
-        $('#tsubasaCat04Table').DataTable({
-            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat04Story.json",
-            bFilter: false,
-            paging: false,
-            info: false,
-            ordering: false,
-            scrollX: true,
-            columns: [
-                { data: 0 },
-                { data: 1 },
-                { data: 2 },
-                { data: 3 },
-                { data: 4 },
-            ]
-        });
-    });
-
-        $(document).ready(function () {
-        $('#tsubasaCat05Table').DataTable({
-            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat05Story.json",
-            bFilter: false,
-            paging: false,
-            info: false,
-            ordering: false,
-            scrollX: true,
-            columns: [
-                { data: 0 },
-                { data: 1 },
-                { data: 2 },
-                { data: 3 },
-                { data: 4 },
-            ]
-        });
-    });
-
-        $(document).ready(function () {
-        $('#tsubasaCat05HTable').DataTable({
-            ajax: "sourcedata/stories/tsubasaCatStory/tsubasaCat05HStory.json",
+        $('#surugaMonkey03HTable').DataTable({
+            ajax: "sourcedata/stories/story03SurugaMonkey/story03SurugaMonkey03H.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -111,27 +75,28 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#TsubasaCat" style="color: #333">
+        <a data-toggle="collapse" data-parent="#accordion" href="#SurugaMonkey" style="color: #333">
             <h4 class="panel-title">
-                <img src="assets/story/boss/bhanekawa01.png" width="25px" height="25px"> Tsubasa Cat
+                <img src="assets/story/boss/rainydevil01.png" width="25px" height="25px"> Suruga Monkey
             </h4>
         </a>
+
     </div>
-    <div id="TsubasaCat" class="panel-collapse collapse">
+    <div id="SurugaMonkey" class="panel-collapse collapse">
         <div class="panel-body">
-            <div class="panel-group" id="TsubasaCatAccordion">
+            <div class="panel-group" id="SurugaMonkeyAccordion">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#TsubasaCatAccordion" href="#TsubasaCat01" style="color: #333">
+                        <a data-toggle="collapse" data-parent="#SurugaMonkeyAccordion" href="#SurugaMonkey01" style="color: #333">
                             <h4 class="panel-title">
                                 Area 1
                             </h4>
                         </a>
                     </div>
-                    <div id="TsubasaCat01" class="panel-collapse collapse">
+                    <div id="SurugaMonkey01" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table id="tsubasaCat01Table" class="table" style="font-size: 16px; text-align: center">
+                            <table id="surugaMonkey01Table" class="table" style="font-size: 16px; text-align: center">
                                 <thead>
                                     <tr>
                                         <th style="text-align: center">Stage</th>
@@ -157,15 +122,15 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#TsubasaCatAccordion" href="#TsubasaCat02" style="color: #333">
+                        <a data-toggle="collapse" data-parent="#SurugaMonkeyAccordion" href="#SurugaMonkey02" style="color: #333">
                             <h4 class="panel-title">
                                 Area 2
                             </h4>
                         </a>
                     </div>
-                    <div id="TsubasaCat02" class="panel-collapse collapse">
+                    <div id="SurugaMonkey02" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table id="tsubasaCat02Table" class="table" style="font-size: 16px; text-align: center">
+                            <table id="surugaMonkey02Table" class="table" style="font-size: 16px; text-align: center">
                                 <thead>
                                     <tr>
                                         <th style="text-align: center">Stage</th>
@@ -191,15 +156,15 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#TsubasaCatAccordion" href="#TsubasaCat03" style="color: #333">
+                        <a data-toggle="collapse" data-parent="#SurugaMonkeyAccordion" href="#SurugaMonkey03" style="color: #333">
                             <h4 class="panel-title">
                                 Area 3
                             </h4>
                         </a>
                     </div>
-                    <div id="TsubasaCat03" class="panel-collapse collapse">
+                    <div id="SurugaMonkey03" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table id="tsubasaCat03Table" class="table" style="font-size: 16px; text-align: center">
+                            <table id="surugaMonkey03Table" class="table" style="font-size: 16px; text-align: center">
                                 <thead>
                                     <tr>
                                         <th style="text-align: center">Stage</th>
@@ -225,85 +190,15 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#TsubasaCatAccordion" href="#TsubasaCat04" style="color: #333">
+                        <a data-toggle="collapse" data-parent="#SurugaMonkeyAccordion" href="#SurugaMonkey03H" style="color: #333">
                             <h4 class="panel-title">
-                                Area 4
+                                Area 3 Hard
                             </h4>
                         </a>
                     </div>
-                    <div id="TsubasaCat04" class="panel-collapse collapse">
+                    <div id="SurugaMonkey03H" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table id="tsubasaCat04Table" class="table" style="font-size: 16px; text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align: center">Stage</th>
-                                        <th style="text-align: center">Objective</th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#TsubasaCatAccordion" href="#TsubasaCat05" style="color: #333">
-                            <h4 class="panel-title">
-                                Area 5
-                            </h4>
-                        </a>
-                    </div>
-                    <div id="TsubasaCat05" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table id="tsubasaCat05Table" class="table" style="font-size: 16px; text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align: center">Stage</th>
-                                        <th style="text-align: center">Objective</th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#TsubasaCatAccordion" href="#TsubasaCat05H" style="color: #333">
-                            <h4 class="panel-title">
-                                Area 5 Hard
-                            </h4>
-                        </a>
-                    </div>
-                    <div id="TsubasaCat05H" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table id="tsubasaCat05HTable" class="table" style="font-size: 16px; text-align: center">
+                            <table id="surugaMonkey03HTable" class="table" style="font-size: 16px; text-align: center">
                                 <thead>
                                     <tr>
                                         <th style="text-align: center">Stage</th>

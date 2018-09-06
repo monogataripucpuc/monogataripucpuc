@@ -1,8 +1,8 @@
 <!-- Data Display Script-->
 <script type="text/javascript" class="init">
     $(document).ready(function () {
-        $('#mayoiSnail01Table').DataTable({
-            ajax: "sourcedata/stories/mayoiSnailStory/mayoiSnail01Story.json",
+        $('#nadekoSnake01Table').DataTable({
+            ajax: "sourcedata/stories/story04NadekoSnake/story04NadekoSnake01.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -19,8 +19,8 @@
     });
 
     $(document).ready(function () {
-        $('#mayoiSnail02Table').DataTable({
-            ajax: "sourcedata/stories/mayoiSnailStory/mayoiSnail02Story.json",
+        $('#nadekoSnake02Table').DataTable({
+            ajax: "sourcedata/stories/story04NadekoSnake/story04NadekoSnake02.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -37,8 +37,26 @@
     });
 
     $(document).ready(function () {
-        $('#mayoiSnail02HTable').DataTable({
-            ajax: "sourcedata/stories/mayoiSnailStory/mayoiSnail02HStory.json",
+        $('#nadekoSnake03Table').DataTable({
+            ajax: "sourcedata/stories/story04NadekoSnake/story04NadekoSnake03.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            ordering: false,
+            scrollX: true,
+            columns: [
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    });
+
+    $(document).ready(function () {
+        $('#nadekoSnake03HTable').DataTable({
+            ajax: "sourcedata/stories/story04NadekoSnake/story04NadekoSnake03H.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -57,27 +75,27 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#MayoiSnail" style="color: #333">
+        <a data-toggle="collapse" data-parent="#accordion" href="#NadekoSnake" style="color: #333">
             <h4 class="panel-title">
-                <img src="assets/story/boss/mayoiushi01.png" width="25px" height="25px"> Mayoi Snail
+                <img src="assets/story/boss/jagirinawa01.png" width="25px" height="25px"> Nadeko Snake
             </h4>
         </a>
     </div>
-    <div id="MayoiSnail" class="panel-collapse collapse">
+    <div id="NadekoSnake" class="panel-collapse collapse">
         <div class="panel-body">
-            <div class="panel-group" id="MayoiSnailAccordion">
+            <div class="panel-group" id="NadekoSnakeAccordion">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#MayoiSnailAccordion" href="#MayoiSnail01" style="color: #333">
+                        <a data-toggle="collapse" data-parent="#NadekoSnakeAccordion" href="#NadekoSnake01" style="color: #333">
                             <h4 class="panel-title">
                                 Area 1
                             </h4>
                         </a>
                     </div>
-                    <div id="MayoiSnail01" class="panel-collapse collapse">
+                    <div id="NadekoSnake01" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table id="mayoiSnail01Table" class="table" style="font-size: 16px; text-align: center">
+                            <table id="nadekoSnake01Table" class="table" style="font-size: 16px; text-align: center">
                                 <thead>
                                     <tr>
                                         <th style="text-align: center">Stage</th>
@@ -103,15 +121,15 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#MayoiSnailAccordion" href="#MayoiSnail02" style="color: #333">
+                        <a data-toggle="collapse" data-parent="#NadekoSnakeAccordion" href="#NadekoSnake02" style="color: #333">
                             <h4 class="panel-title">
                                 Area 2
                             </h4>
                         </a>
                     </div>
-                    <div id="MayoiSnail02" class="panel-collapse collapse">
+                    <div id="NadekoSnake02" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table id="mayoiSnail02Table" class="table" style="font-size: 16px; text-align: center">
+                            <table id="nadekoSnake02Table" class="table" style="font-size: 16px; text-align: center">
                                 <thead>
                                     <tr>
                                         <th style="text-align: center">Stage</th>
@@ -137,15 +155,49 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#MayoiSnailAccordion" href="#MayoiSnail02H" style="color: #333">
+                        <a data-toggle="collapse" data-parent="#NadekoSnakeAccordion" href="#NadekoSnake03" style="color: #333">
                             <h4 class="panel-title">
-                                Area 2 Hard
+                                Area 3
                             </h4>
                         </a>
                     </div>
-                    <div id="MayoiSnail02H" class="panel-collapse collapse">
+                    <div id="NadekoSnake03" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table id="mayoiSnail02HTable" class="table" style="font-size: 16px; text-align: center">
+                            <table id="nadekoSnake03Table" class="table" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Stage</th>
+                                        <th style="text-align: center">Objective</th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                        <th style="text-align: center">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                            <img src="assets/ui/star.png" width="25px" height="25px">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#NadekoSnakeAccordion" href="#NadekoSnake03H" style="color: #333">
+                            <h4 class="panel-title">
+                                Area 3 Hard
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="NadekoSnake03H" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table id="nadekoSnake03HTable" class="table" style="font-size: 16px; text-align: center">
                                 <thead>
                                     <tr>
                                         <th style="text-align: center">Stage</th>
