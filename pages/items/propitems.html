@@ -1,0 +1,42 @@
+<!-- Data Display Script-->
+<script type="text/javascript" class="init">
+    $(document).ready(function () {
+        $('#propitemstable').DataTable({
+            ajax: "sourcedata/items/propitems.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            columns: [
+                {
+                    data: null,
+                    render: function (data, type, row) {
+                        return '<img src="assets/item/prop/' + data[0] + '.png" width="50px" style="padding:5px; padding-right:10px"/> ';
+                    }
+                },
+                { data: 1 }
+            ]
+        });
+    });
+</script>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#props" style="color: #333">
+            <h4 class="panel-title">
+                <img src="assets/item/prop/prop_general01_M.png" width="25px" height="25px"> Props
+            </h4>
+        </a>
+    </div>
+    <div id="props" class="panel-collapse collapse">
+        <div class="panel-body">
+            <table id="propitemstable" class="table-borderless" style="font-size: 16px;">
+                <thead>
+                    <tr style="display:none">
+                        <th>Item</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
