@@ -1,8 +1,8 @@
 <!-- Data Display Script-->
 <script type="text/javascript" class="init">
     $(document).ready(function () {
-        $('#sceneBannersTable').DataTable({
-            ajax: "sourcedata/banners/sceneBanners.json",
+        $('#scenenannerstable').DataTable({
+            ajax: "sourcedata/banners/scenebanners.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -10,7 +10,7 @@
                 {
                     data: null,
                     render: function (data, type, row) {
-                        return '<img src="assets/banners/scene/' + data[0] + '.png" width="100%" style="padding:5px;"/> ';
+                        return '<img src="assets/banner/scene/' + data[0] + '.png" width="100%" style="padding:5px;"/> ';
                     }
                 }
             ]
@@ -28,7 +28,7 @@
     </div>
     <div id="scene" class="panel-collapse collapse">
         <div class="panel-body">
-            <table id="sceneBannersTable" class="table-borderless">
+            <table id="scenenannerstable" class="table-borderless">
                 <thead>
                     <tr style="display:none">
                         <th>Image</th>

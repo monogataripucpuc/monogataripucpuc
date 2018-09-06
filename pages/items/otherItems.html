@@ -1,8 +1,8 @@
 <!-- Data Display Script-->
 <script type="text/javascript" class="init">
     $(document).ready(function () {
-        $('#otherItemsTable').DataTable({
-            ajax: "sourcedata/items/otherItems.json",
+        $('#otheritemstable').DataTable({
+            ajax: "sourcedata/items/otheritems.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -10,7 +10,7 @@
                 {
                     data: null,
                     render: function (data, type, row) {
-                        return '<img src="assets/items/others/' + data[0] + '.png" width="50px" style="padding:5px; padding-right:10px"/> ';
+                        return '<img src="assets/item/other/' + data[0] + '.png" width="50px" style="padding:5px; padding-right:10px"/> ';
                     }
                 },
                 { data: 1 }
@@ -23,13 +23,13 @@
     <div class="panel-heading">
         <a data-toggle="collapse" data-parent="#accordion" href="#others" style="color: #333">
             <h4 class="panel-title">
-                <img src="assets/items/others/free_puc_gem_M.png" width="25px" height="25px"> Others
+                <img src="assets/item/other/free_puc_gem_M.png" width="25px" height="25px"> Others
             </h4>
         </a>
     </div>
     <div id="others" class="panel-collapse collapse">
         <div class="panel-body">
-            <table id="otherItemsTable" class="table-borderless" style="font-size: 16px;">
+            <table id="otheritemstable" class="table-borderless" style="font-size: 16px;">
                 <thead>
                     <tr style="display:none">
                         <th>Item</th>
