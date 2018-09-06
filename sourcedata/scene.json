@@ -18,9 +18,9 @@
     ["0016","scn_cardL_pucpuc01_0016","4","???","Gacha"],
     ["0017","scn_cardL_pucpuc01_0017","4","???","Gacha"],
     ["0018","scn_cardL_pucpuc01_0018","4","???","Gacha"],
-    ["0019","scn_cardL_pucpuc01_0019","4","???","Gacha,Event"],
-    ["0020","scn_cardL_ev_collect_01_0001","5","???","Event"],
-    ["0021","scn_cardL_ev_collect_01_0002","5","???","Event"],
-    ["0022","scn_cardL_ev_collect_01_0003","4","???","Event"]
+    ["0019","scn_cardL_pucpuc01_0019","4","???","Gacha"],
+    ["0020","scn_cardL_ev_collect_01_0001","5","???","Gacha"],
+    ["0021","scn_cardL_ev_collect_01_0002","5","???","Event,ShrineCompetitionFestival"],
+    ["0022","scn_cardL_ev_collect_01_0003","4","???","Event,ShrineCompetitionFestival"]
   ]
 }
