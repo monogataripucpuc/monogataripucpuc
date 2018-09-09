@@ -7,7 +7,7 @@
     ["0005","scn_cardL_pucpuc01_0005","5","Leader PucPuc Size +2; Pop every other PucPuc","Gacha"],
     ["0006","scn_cardL_pucpuc01_0006","5","Increase Skill Gauge by 50% when you hit Fever Time","Gacha"],
     ["0007","scn_cardL_pucpuc01_0007","5","Whenever you hit a chain of x or more, Size +x for x seconds","Gacha"],
-    ["0008","scn_cardL_pucpuc01_0008","4","Size +10 for 2 PucPucs","Gacha"],
+    ["0008","scn_cardL_pucpuc01_0008","4","2 PucPucs Size +10","Gacha"],
     ["0009","scn_cardL_pucpuc01_0009","4","5 PucPucs Size +5","Gacha"],
     ["0010","scn_cardL_pucpuc01_0010","4","14 PucPucs Size +2","Gacha"],
     ["0011","scn_cardL_pucpuc01_0011","4","Change all PucPucs surrounding Araragi to Leader PucPuc","Gacha"],
