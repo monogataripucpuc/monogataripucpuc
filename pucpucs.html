@@ -75,8 +75,8 @@
                                 if (col.columnIndex > 4) {
                                     return col.hidden ?
                                         '<tr style="font-size: 16px;" data-dt-row="' + col.rowIndex + '" data-dt-column="' + col.columnIndex + '">' +
-                                        '<td width="50%">' + col.title + ':' + '</td> ' +
-                                        '<td width="50%">' + col.data + '</td>' +
+                                        '<td class="modalinfo">' + col.title + '</td> ' +
+                                        '<td class="modalinfo">' + col.data + '</td>' +
                                         '</tr>' :
                                         '';
                                 }
@@ -112,6 +112,14 @@
             });
         });
     </script>
+
+    <style type="text/css">
+        .modalinfo {
+            padding-bottom: 10px;
+            font-weight: bold;
+            width: 50%;
+        }
+    </style>
 
 </head>
 
