@@ -61,6 +61,7 @@
         $(document).ready(function () {
             $('#pucpuc').DataTable({
                 ajax: "sourcedata/pucpuc.json",
+                pageLength: 25,
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({
@@ -73,9 +74,9 @@
                             var data = $.map(columns, function (col, i) {
                                 if (col.columnIndex > 4) {
                                     return col.hidden ?
-                                        '<tr style="font-size: 16px;" data-dt-row="' + col.rowIndex + '" data-dt-column="' + col.columnIndex + '">' +
-                                        '<td width="50%">' + col.title + ':' + '</td> ' +
-                                        '<td width="50%">' + col.data + '</td>' +
+                                        '<tr data-dt-row="' + col.rowIndex + '" data-dt-column="' + col.columnIndex + '">' +
+                                        '<td class="modaltitle">' + col.title + '</td> ' +
+                                        '<td class="modaldata">' + col.data + '</td>' +
                                         '</tr>' :
                                         '';
                                 }
@@ -97,12 +98,10 @@
                     },
                     { data: 3 },
                     { data: 4 },
-                    { data: 5 },
                     { data: 0 },
                     { data: 2 },
                     { data: 3 },
                     { data: 4 },
-                    { data: 5 },
                     {
                         data: 1,
                         render: function (data, type, row) {
@@ -113,6 +112,21 @@
             });
         });
     </script>
+
+    <style type="text/css">
+        .modaltitle {
+            font-size: 14px;
+            padding-bottom: 5px;
+            font-weight: bold;
+            width: 50%;
+        }
+
+        .modaldata {
+            font-size: 14px;
+            padding-bottom: 5px;
+            width: 50%;
+        }
+    </style>
 
 </head>
 
@@ -138,12 +152,10 @@
                                         <th width="10%">ID</th>
                                         <th width="25%">Name</th>
                                         <th width="20%">Character</th>
-                                        <th width="15%">Attack</th>
                                         <th width="30%">Special</th>
                                         <th class="none" style="display:none;">ID</th>
                                         <th class="none" style="display:none;">Name</th>
                                         <th class="none" style="display:none;">Character</th>
-                                        <th class="none" style="display:none;">Attack</th>
                                         <th class="none" style="display:none;">Special</th>
                                         <th class="none" style="display:none;">Splashart</th>
                                     </tr>
