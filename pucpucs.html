@@ -61,6 +61,7 @@
         $(document).ready(function () {
             $('#pucpuc').DataTable({
                 ajax: "sourcedata/pucpuc.json",
+                pageLength: 25,
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({

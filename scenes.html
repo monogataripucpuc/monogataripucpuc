@@ -61,6 +61,7 @@
         $(document).ready(function () {
             $('#scene').DataTable({
                 ajax: "sourcedata/scene.json",
+                pageLength: 25,
                 responsive: {
                     details: {
                         display: $.fn.dataTable.Responsive.display.modal({
