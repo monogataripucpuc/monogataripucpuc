@@ -3,7 +3,3 @@ scenes / pucpucs
 
 new page
     - team suggestions
-
-general
-    - remove .html by removing it from href in navbar.html and adding the file to .gitignore after first push
-    - change website to monogataripucpuc.github.io
