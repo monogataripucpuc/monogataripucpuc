@@ -1,0 +1,13 @@
+{
+    "data": [
+        ["スコアを X","Hitting a total score"],
+        ["累計 X サイズ","Accumulating a total PucPuc size of X"],
+        ["スキル","Use your Leader Skill X times"],
+        ["X サイズ以上 ~Y 回","Pop X sized or over PucPucs Y times"],
+        ["X コンボ","Highest combo score per stage"],
+        ["X チェーン以上 ~Y 回","Get chains of X or over Y times"],
+        ["累計 X 個消去","Pop X total PucPucs or more"],
+        ["コイン","Get X coints"],
+        ["フィーバー X","Activate Fever Time X times"]
+    ]
+}
