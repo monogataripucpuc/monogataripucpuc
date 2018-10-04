@@ -17,6 +17,19 @@
             ]
         });
     });
+
+    $(document).ready(function () {
+        $('#probitemssubtable').DataTable({
+            ajax: "sourcedata/items/propitemssub.json",
+            bFilter: false,
+            paging: false,
+            info: false,
+            columns: [
+                { data: 0 },
+                { data: 1 }
+            ]
+        });
+    });
 </script>
 
 <div class="panel panel-default">
@@ -37,6 +50,31 @@
                     </tr>
                 </thead>
             </table>
+
+            <div class="panel-group" id="probitemssubaccordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#probitemssubaccordion" href="#probitemssub" style="color: #333">
+                            <h4 class="panel-title">
+                                Sub Abilities
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="probitemssub" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table id="probitemssubtable" class="table table-responsive" style="font-size: 16px; text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center">Japanese</th>
+                                        <th style="text-align: center">English</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
