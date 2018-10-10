@@ -28,7 +28,7 @@
     ["026","karen02","Karen 02","Karen Araragi","Increases the Size of almost all PucPucs by a small amount"],
     ["027","suruga03","Suruga 02","Suruga Kanbaru","Increases the Size of PucPucs in multiple areas"],
     ["028","yozuru01","Yozuru 01","Yozuru Kagenui","Clears center of the board and Size+ for surrounding PucPucs"],
-    ["029","shinobu05","Shinobu 05","Shinobu Oshino","???"],
+    ["029","shinobu05","Shinobu 05","Shinobu Oshino","Turns PucPucs into rocks which can be tapped to increase the Size of surrounding PucPucs"],
     ["030","tsukihi02","Tsukihi 02","Tsukihi Araragi","Clears random PucPucs besides Leader PucPucs"]
   ]
 }
