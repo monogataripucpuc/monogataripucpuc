@@ -50,7 +50,7 @@
     <script src="dist/js/sb-admin-2.js"></script>
 
     <!-- Navigation Bar Script-->
-    <script> 
+    <script>
         $(function () {
             $("#navigationbar").load("pages/navbar.html");
         });
@@ -67,7 +67,7 @@
                         display: $.fn.dataTable.Responsive.display.modal({
                             header: function (row) {
                                 var data = row.data();
-                                return '<img src="assets/pucpuc/sprite/' + data[1] + '.png" width="50" height="50"/> ' + 'Details for ' + data[2];
+                                return '<img src="assets/pucpuc/sprite/' + data[1] + '.png" class="modalimage"/> ' + 'Details for ' + data[2];
                             }
                         }),
                         renderer: function (api, rowIdx, columns) {
@@ -93,7 +93,7 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/pucpuc/sprite/' + data[1] + '.png" width="50" height="50"/> ' + data[2];
+                            return '<img src="assets/pucpuc/sprite/' + data[1] + '.png" class="pucpucimage"/>';
                         }
                     },
                     { data: 3 },
@@ -126,6 +126,17 @@
             padding-bottom: 5px;
             width: 50%;
         }
+
+        .modalimage {
+            width: 60px;
+        }
+
+        .pucpucimage {
+            width: 60px;
+
+            display: block;
+            margin: auto;
+        }
     </style>
 
 </head>
@@ -146,13 +157,14 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <table id="pucpuc" width="100%" class="table table-striped table-bordered table-hover" style="font-size: 16px;">
+                            <table id="pucpuc" width="100%" class="table table-striped table-bordered table-hover"
+                                style="font-size: 16px;">
                                 <thead>
                                     <tr>
                                         <th width="10%">ID</th>
-                                        <th width="25%">Name</th>
+                                        <th width="13%">PucPuc</th>
                                         <th width="20%">Character</th>
-                                        <th width="30%">Special</th>
+                                        <th width="57%">Special</th>
                                         <th class="none" style="display:none;">ID</th>
                                         <th class="none" style="display:none;">Name</th>
                                         <th class="none" style="display:none;">Character</th>

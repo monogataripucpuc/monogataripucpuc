@@ -23,6 +23,8 @@
     ["0021","scn_cardL_ev_collect_01_0002","5","2 PucPucs Size +5 when you hit fever time","Event,ShrineCompetitionFestival"],
     ["0022","scn_cardL_ev_collect_01_0003","4","12 PucPucs Size +2","Event,ShrineCompetitionFestival"],
     ["0023","scn_cardL_pucpuc02_0001","5","Enchants PucPucs which rewards a higher score when connected","Gacha"],
-    ["0024","scn_cardL_pucpuc02_0002","4","1 PucPuc Size +25","Gacha"]
+    ["0024","scn_cardL_pucpuc02_0002","4","1 PucPuc Size +25","Gacha"],
+    ["0025","scn_cardL_pucpuc02_0003","5","8 PucPucs Size +2; 1 PucPuc Size +8; 1 PucPuc Size +9","Gacha"],
+    ["0026","scn_cardL_pucpuc02_0004","4","3 PucPucs Size +7 to the amount of your smallest PucPucs","Gacha"]
   ]
 }

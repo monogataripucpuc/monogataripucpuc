@@ -26,6 +26,9 @@
     ["024","kaiki01","Deishuu 01","Deishuu Kaiki","Turns a number of PucPucs into Money which when combined turns more PucPucs into money"],
     ["025","shinobu01","Shinobu 01","Shinobu Oshino","Increases the Size of PucPucs around Araragi and drops them at the top of the screen where they explode immeditely"],
     ["026","karen02","Karen 02","Karen Araragi","Increases the Size of almost all PucPucs by a small amount"],
-    ["027","suruga03","Suruga 02","Suruga Kanbaru","Increases the Size of PucPucs in multiple areas"]
+    ["027","suruga03","Suruga 02","Suruga Kanbaru","Increases the Size of PucPucs in multiple areas"],
+    ["028","yozuru01","Yozuru 01","Yozuru Kagenui","Clears center of the board and Size+ for surrounding PucPucs"],
+    ["029","shinobu05","Shinobu 05","Shinobu Oshino","???"],
+    ["030","tsukihi02","Tsukihi 02","Tsukihi Araragi","Clears random PucPucs besides Leader PucPucs"]
   ]
 }
