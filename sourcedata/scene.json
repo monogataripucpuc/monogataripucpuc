@@ -25,6 +25,9 @@
     ["0023","scn_cardL_pucpuc02_0001","5","Enchants PucPucs which rewards a higher score when connected","Gacha"],
     ["0024","scn_cardL_pucpuc02_0002","4","1 PucPuc Size +25","Gacha"],
     ["0025","scn_cardL_pucpuc02_0003","5","8 PucPucs Size +2; 1 PucPuc Size +8; 1 PucPuc Size +9","Gacha"],
-    ["0026","scn_cardL_pucpuc02_0004","4","3 PucPucs Size +7 to the amount of your smallest PucPucs","Gacha"]
+    ["0026","scn_cardL_pucpuc02_0004","4","3 PucPucs Size +7 to the amount of your smallest PucPucs","Gacha"],
+    ["0027","scn_cardL_ev_minimap_01_0001","5","Create two horizontal lines across the stage and Size up","Gacha"],
+    ["0028","scn_cardL_ev_minimap_01_0002","5","Erase two areas of the board and refill with bigger PucPucs","Event"],
+    ["0029","scn_cardL_ev_minimap_01_0003","4","Create two big PucPucs","Event"]
   ]
 }
