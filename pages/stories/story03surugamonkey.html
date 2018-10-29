@@ -1,8 +1,8 @@
 <!-- Data Display Script-->
 <script type="text/javascript" class="init">
     $(document).ready(function () {
-        $('#surugamonkey01table').DataTable({
-            ajax: "sourcedata/stories/story03surugamonkey/story03surugamonkey01.json",
+        $('#story03surugamonkeytable').DataTable({
+            ajax: "sourcedata/stories/story03surugamonkey.json",
             bFilter: false,
             paging: false,
             info: false,
@@ -10,68 +10,12 @@
             scrollX: true,
             columns: [
                 { data: 0 },
-                { data: 1 },
-                { data: 2 },
-                { data: 3 },
-                { data: 4 },
-            ]
-        });
-    });
-
-    $(document).ready(function () {
-        $('#surugamonkey02table').DataTable({
-            ajax: "sourcedata/stories/story03surugamonkey/story03surugamonkey02.json",
-            bFilter: false,
-            paging: false,
-            info: false,
-            ordering: false,
-            scrollX: true,
-            columns: [
-                { data: 0 },
-                { data: 1 },
-                { data: 2 },
-                { data: 3 },
-                { data: 4 },
-            ]
-        });
-    });
-
-    $(document).ready(function () {
-        $('#surugamonkey03table').DataTable({
-            ajax: "sourcedata/stories/story03surugamonkey/story03surugamonkey03.json",
-            bFilter: false,
-            paging: false,
-            info: false,
-            ordering: false,
-            scrollX: true,
-            columns: [
-                { data: 0 },
-                { data: 1 },
-                { data: 2 },
-                { data: 3 },
-                { data: 4 },
-            ]
-        });
-    });
-
-    $(document).ready(function () {
-        $('#surugamonkey03Htable').DataTable({
-            ajax: "sourcedata/stories/story03surugamonkey/story03surugamonkey03H.json",
-            bFilter: false,
-            paging: false,
-            info: false,
-            ordering: false,
-            scrollX: true,
-            columns: [
-                { data: 0 },
-                { data: 1 },
-                { data: 2 },
-                { data: 3 },
-                { data: 4 },
+                { data: 1 }
             ]
         });
     });
 </script>
+
 
 <div class="panel panel-default">
     <div class="panel-heading">
@@ -86,140 +30,15 @@
         <div class="panel-body">
             <div class="panel-group" id="surugamonkeyaccordion">
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#surugamonkeyaccordion" href="#surugamonkey01" style="color: #333">
-                            <h4 class="panel-title">
-                                Area 1
-                            </h4>
-                        </a>
-                    </div>
-                    <div id="surugamonkey01" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table id="surugamonkey01table" class="table" style="font-size: 16px; text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align: center">Stage</th>
-                                        <th style="text-align: center">Objective</th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#surugamonkeyaccordion" href="#surugamonkey02" style="color: #333">
-                            <h4 class="panel-title">
-                                Area 2
-                            </h4>
-                        </a>
-                    </div>
-                    <div id="surugamonkey02" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table id="surugamonkey02table" class="table" style="font-size: 16px; text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align: center">Stage</th>
-                                        <th style="text-align: center">Objective</th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#surugamonkeyaccordion" href="#surugamonkey03" style="color: #333">
-                            <h4 class="panel-title">
-                                Area 3
-                            </h4>
-                        </a>
-                    </div>
-                    <div id="surugamonkey03" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table id="surugamonkey03table" class="table" style="font-size: 16px; text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align: center">Stage</th>
-                                        <th style="text-align: center">Objective</th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#surugamonkeyaccordion" href="#surugamonkey03H" style="color: #333">
-                            <h4 class="panel-title">
-                                Area 3 Hard
-                            </h4>
-                        </a>
-                    </div>
-                    <div id="surugamonkey03H" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table id="surugamonkey03Htable" class="table" style="font-size: 16px; text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align: center">Stage</th>
-                                        <th style="text-align: center">Objective</th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                        <th style="text-align: center">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                            <img src="assets/ui/star.png" width="25px" height="25px">
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
+                <div class="panel-body">
+                    <table id="story03surugamonkeytable" class="table" style="font-size: 16px; text-align: center">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center">Area</th>
+                                <th style="text-align: center">Stages</th>
+                            </tr>
+                        </thead>
+                    </table>
                 </div>
 
             </div>
