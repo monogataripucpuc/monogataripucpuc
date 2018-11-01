@@ -31,7 +31,9 @@
     ["029","shinobu05","Shinobu 05","Shinobu Oshino","Turns PucPucs into rocks which can be tapped to increase the Size of surrounding PucPucs"],
     ["030","tsukihi02","Tsukihi 02","Tsukihi Araragi","Clears random PucPucs besides Leader PucPucs"],
     ["031","yotsugi02","Yotsugi 02","Yotsugi Ononoki","Size up on each half of the screen"],
-    ["032","nadeko04","Nadeko 02","Nadeko Sengoku","Tap PucPuc Candy to Size up surrounding area"]
+    ["032","nadeko04","Nadeko 02","Nadeko Sengoku","Tap PucPuc Candy to Size up surrounding area"],
+    ["033","hitagi09","Hitagi 09","Hitagi Senjogahara","???"],
+    ["034","suruga06","Suruga 06","Suruga Kanbaru","???"]
 
   ]
 }

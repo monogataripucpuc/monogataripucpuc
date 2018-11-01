@@ -28,6 +28,7 @@
     ["0026","scn_cardL_pucpuc02_0004","4","Up to 7 PucPucs Size +3","Gacha"],
     ["0027","scn_cardL_ev_minimap_01_0001","5","Create two horizontal lines across the stage and Size up","Gacha"],
     ["0028","scn_cardL_ev_minimap_01_0002","5","Erase two areas of the board and refill with bigger PucPucs","Event"],
-    ["0029","scn_cardL_ev_minimap_01_0003","4","Create two big PucPucs","Event"]
+    ["0029","scn_cardL_ev_minimap_01_0003","4","Create two big PucPucs","Event"],
+    ["0030","scn_cardL_memorial_zokuowari_0001","4","???","Event"]
   ]
 }
