@@ -33,7 +33,8 @@
     ["031","yotsugi02","Yotsugi 02","Yotsugi Ononoki","Size up on each half of the screen"],
     ["032","nadeko04","Nadeko 02","Nadeko Sengoku","Tap PucPuc Candy to Size up surrounding area"],
     ["033","hitagi09","Hitagi 09","Hitagi Senjogahara","Size up section of the Board"],
-    ["034","suruga06","Suruga 06","Suruga Kanbaru","Clears center of the Board"]
+    ["034","suruga06","Suruga 06","Suruga Kanbaru","Clears center of the Board"],
+    ["035","hitagi07","Hitagi 07","Hitagi Senjogahara","Creates Araragi PucPucs which can be connected for High Score"]
 
   ]
 }

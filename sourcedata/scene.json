@@ -29,6 +29,8 @@
     ["0027","scn_cardL_ev_minimap_01_0001","5","Create two horizontal lines across the stage and Size up","Gacha"],
     ["0028","scn_cardL_ev_minimap_01_0002","5","Erase two areas of the board and refill with bigger PucPucs","Event"],
     ["0029","scn_cardL_ev_minimap_01_0003","4","Create two big PucPucs","Event"],
-    ["0030","scn_cardL_memorial_zokuowari_0001","4","Size up PucPucs around the center of the Board","Event"]
+    ["0030","scn_cardL_memorial_zokuowari_0001","4","Size up PucPucs around the center of the Board","Event"],
+    ["0031","scn_cardL_pucpuc02_0005","5","Clears a vertical line in the middle of the Stage for a High Score and sizes up PucPucs","Gacha"],
+    ["0032","scn_cardL_pucpuc02_0006","4","","Gacha"]
   ]
 }
