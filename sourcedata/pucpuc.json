@@ -35,8 +35,8 @@
     ["033","hitagi09","Hitagi 09","Hitagi Senjogahara","Size up section of the Board"],
     ["034","suruga06","Suruga 06","Suruga Kanbaru","Clears center of the Board"],
     ["035","hitagi07","Hitagi 07","Hitagi Senjogahara","Creates Araragi PucPucs which can be connected for High Score"],
-    ["036","boku01","Boku 01","Boku","Size up selection of the board"],
-    ["037","tomo01","Tomo 01","Tomo Kunagisa","Increase the Size of 7 PucPucs"],
+    ["036","boku01","Boku 01","Boku","Clears Top half of the board and Size up Bottom half"],
+    ["037","tomo01","Tomo 01","Tomo Kunagisa","Creates Boku PucPucs that grow bigger when linked with Tomo"],
     ["038","jun01","Jun 01","Jun Aikawa","Target a Line and Size up some and Pop some PucPucs"]
   ]
 }
