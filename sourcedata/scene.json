@@ -38,6 +38,10 @@
     ["0036","scn_cardL_ev_minimap_02_0004","5","Randomly changes PucPucs near the Center of the board to another non-leader PucPuc","Event"],
     ["0037","scn_cardL_ev_minimap_02_0005","4","Size up to 4 PucPucs","Event"],
     ["0038","scn_cardL_ev_minimap_02_0006","4","Size up to 2 PucPucs","Event"],
-    ["0039","scn_cardL_ev_minimap_02_0007","4","Sute up to 5 PucPucs","Event"]
+    ["0039","scn_cardL_ev_minimap_02_0007","4","Sute up to 5 PucPucs","Event"],
+    ["0040","scn_cardL_ev_minimap_03_0001","5","","Gacha"],
+    ["0041","scn_cardL_ev_minimap_03_0002","5","","Gacha"],
+    ["0041","scn_cardL_ev_minimap_03_0003","4","","Gacha"]
+
   ]
 }
