@@ -49,6 +49,11 @@
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
 
+    <!-- DataTable Checkbox StateSave-->
+    <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css"
+        rel="stylesheet" />
+    <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
+
     <!-- Navigation Bar Script-->
     <script>
         $(function () {
@@ -98,6 +103,13 @@
                     },
                     { data: 3 },
                     { data: 4 },
+                    {
+                        data: 0,
+                        targets: 0,
+                        checkboxes: {
+                            selectRow: false
+                        }
+                    },
                     { data: 0 },
                     { data: 2 },
                     { data: 3 },
@@ -108,7 +120,8 @@
                             return '<img src="assets/pucpuc/splashart/' + data + '.png"/>';
                         }
                     }
-                ]
+                ],
+                stateSave: true
             });
         });
     </script>
@@ -165,6 +178,7 @@
                                         <th width="13%">PucPuc</th>
                                         <th width="20%">Character</th>
                                         <th width="57%">Special</th>
+                                        <th></th>
                                         <th class="none" style="display:none;">ID</th>
                                         <th class="none" style="display:none;">Name</th>
                                         <th class="none" style="display:none;">Character</th>

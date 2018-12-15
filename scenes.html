@@ -49,8 +49,13 @@
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
 
+    <!-- DataTable Checkbox StateSave-->
+    <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css"
+        rel="stylesheet" />
+    <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
+
     <!-- Navigation Bar Script-->
-    <script> 
+    <script>
         $(function () {
             $("#navigationbar").load("pages/navbar.html");
         });
@@ -72,7 +77,7 @@
                         }),
                         renderer: function (api, rowIdx, columns) {
                             var data = $.map(columns, function (col, i) {
-                                if (col.columnIndex == 4) {
+                                if (col.columnIndex == 5) {
                                     return col.hidden ?
                                         '<tr style="font-size: 16px;" data-dt-row="' + col.rowIndex + '" data-dt-column="' + col.columnIndex + '">' +
                                         '<td>' + col.data + '</td>' +
@@ -106,12 +111,20 @@
                     },
                     { data: 3 },
                     {
+                        data: 0,
+                        targets: 0,
+                        checkboxes: {
+                            selectRow: false
+                        }
+                    },
+                    {
                         data: 1,
                         render: function (data, type, row) {
                             return '<img width="100%" src="assets/scene/card/' + data + '.png"/>';
                         }
                     }
-                ]
+                ],
+                stateSave: true
             });
         });
     </script>
@@ -171,6 +184,7 @@
                                         <th width="15%">Scene</th>
                                         <th width="15%">Rarity</th>
                                         <th width="60%">Effect</th>
+                                        <th></th>
                                         <th class="none" style="display:none;">Splashart</th>
                                     </tr>
                                 </thead>
