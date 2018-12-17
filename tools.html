@@ -45,7 +45,6 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/gh/ashl1/datatables-rowsgroup/dataTables.rowsGroup.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
@@ -119,14 +118,24 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/item/prop/prop_general' + data[0] + '_M.png" class="toolimage"/>';
+                            if (type === 'display')
+                                return '<img src="assets/item/prop/prop_general' + data[0] + '_M.png" class="toolimage"/>';
+                            return data[0];
                         }
                     },
                     { data: 1 },
                     { data: 2 },
                     { data: 3 }
                 ],
-                rowsGroup: [1],
+                rowCallback: function(row, data, i) {
+                    var td = row.firstElementChild;
+                    if (i % 7) {
+                        td.style.display = 'none';
+                    } else {
+                        td.style.display = '';
+                        td.setAttribute('rowspan','7');
+                    }
+                }
             });
         });
     </script>
@@ -218,5 +227,4 @@
     </div>
     <!-- /#wrapper -->
 </body>
-
 </html>
