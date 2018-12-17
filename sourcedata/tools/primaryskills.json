@@ -1,0 +1,14 @@
+{
+    "data": [
+      ["01","Black Cellphone","Fever Time +X sec","0.5","0.5","0.5","1","1","",""],
+      ["02","Pink Cellphone","Initial Fever Gauge +X%","10","12","14","16","19","24",""],
+      ["03","Headband","Familiarity +X","1","1","1","2","2","",""],
+      ["04","Stopwatch","Time +X sec","1","1","1","1.5","1.5","1.5",""],
+      ["05","Red Calendar","Initial Skill Gauge +X%","10","12","14","16","19","",""],
+      ["06","Blue Calendar","Initial Scene Gauge +X%","5","6","7","8","10","",""],
+      ["07","Playing Cards","Combo Start +X","5","7","9","11","13","",""],
+      ["08","Popcorn","Last Bonus +X Puc","1","1","1","2","2","",""],
+      ["09","Red Sketch Pad","Initial Total Size +X","5","6","7","9","11","13","15"],
+      ["10","Yellow Sketch Pad","Initial Size +X","1","1","1","1","1","1",""]
+    ]
+  }
