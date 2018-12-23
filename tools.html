@@ -127,13 +127,13 @@
                     { data: 2 },
                     { data: 3 }
                 ],
-                rowCallback: function(row, data, i) {
+                rowCallback: function (row, data, i) {
                     var td = row.firstElementChild;
                     if (i % 7) {
                         td.style.display = 'none';
                     } else {
                         td.style.display = '';
-                        td.setAttribute('rowspan','7');
+                        td.setAttribute('rowspan', '7');
                     }
                 }
             });
@@ -230,4 +230,5 @@
     </div>
     <!-- /#wrapper -->
 </body>
+
 </html>
