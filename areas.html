@@ -91,37 +91,61 @@
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[5] + '.png" class="pucpucimage"/>';
+                            if (data[5] == "") {
+                                return '';
+                            } else {
+                                return '<img src="assets/scene/card/' + data[5] + '.png" class="sceneimage"/>';
+                            }
                         }
                     },
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[6] + '.png" class="pucpucimage"/>';
+                            if (data[6] == "") {
+                                return '';
+                            } else {
+                                return '<img src="assets/scene/card/' + data[6] + '.png" class="sceneimage"/>';
+                            }
                         }
                     },
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[7] + '.png" class="pucpucimage"/>';
+                            if (data[7] == "") {
+                                return '';
+                            } else {
+                                return '<img src="assets/scene/card/' + data[7] + '.png" class="sceneimage"/>';
+                            }
                         }
                     },
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[8] + '.png" class="pucpucimage"/>';
+                            if (data[8] == "") {
+                                return '';
+                            } else {
+                                return '<img src="assets/scene/card/' + data[8] + '.png" class="sceneimage"/>';
+                            }
                         }
                     },
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[9] + '.png" class="pucpucimage"/>';
+                            if (data[9] == "") {
+                                return '';
+                            } else {
+                                return '<img src="assets/scene/card/' + data[9] + '.png" class="sceneimage"/>';
+                            }
                         }
                     },
                     {
                         data: null,
                         render: function (data, type, row) {
-                            return '<img src="assets/scene/card/' + data[10] + '.png" class="pucpucimage"/>';
+                            if (data[10] == "") {
+                                return '';
+                            } else {
+                                return '<img src="assets/scene/card/' + data[10] + '.png" class="sceneimage"/>';
+                            }
                         }
                     }
                 ]
@@ -132,6 +156,13 @@
     <style type="text/css">
         .pucpucimage {
             width: 60px;
+
+            display: block;
+            margin: auto;
+        }
+
+        .sceneimage {
+            width: 100px;
 
             display: block;
             margin: auto;
@@ -159,17 +190,21 @@
                             <table id="area" width="100%" class="table table-striped table-bordered table-hover" style="font-size: 16px;">
                                 <thead>
                                     <tr>
-                                        <th>Area</th>
-                                        <th>Sub Area</th>
-                                        <th>Stages</th>
-                                        <th>Boosted PucPuc</th>
-                                        <th>Boosted PucPuc</th>
-                                        <th>Boosted Scene</th>
-                                        <th>Boosted Scene</th>
-                                        <th>Boosted Scene</th>
-                                        <th>Boosted Scene</th>
-                                        <th>Boosted Scene</th>
-                                        <th>Boosted Scene</th>
+                                        <th rowspan='2'>Area</th>
+                                        <th rowspan='2'>Sub Area</th>
+                                        <th rowspan='2'>Stages</th>
+                                        <th colspan='2'>Boosted PucPuc</th>
+                                        <th colspan='6'>Boosted Scene</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="display: none;">Boosted PucPuc</th>
+                                        <th style="display: none;">Boosted PucPuc</th>
+                                        <th style="display: none;">Boosted Scene</th>
+                                        <th style="display: none;">Boosted Scene</th>
+                                        <th style="display: none;">Boosted Scene</th>
+                                        <th style="display: none;">Boosted Scene</th>
+                                        <th style="display: none;">Boosted Scene</th>
+                                        <th style="display: none;">Boosted Scene</th>
                                     </tr>
                                 </thead>
                             </table>
