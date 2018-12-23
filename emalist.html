@@ -50,9 +50,8 @@
     <script src="dist/js/sb-admin-2.js"></script>
 
     <!-- DataTable Checkbox StateSave-->
-    <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css"
-        rel="stylesheet" />
-    <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
+    <link type="text/css" href="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
 
     <!-- Navigation Bar Script-->
     <script>
@@ -63,36 +62,72 @@
 
     <!-- Data Display Script-->
     <script type="text/javascript" class="init">
-        
-        var table = "";
+        var ema_list = [];
+        var areas = [
+            ['bake01', 'Hitagi Crab'],
+            ['bake02', 'Mayoi Mai Mai'],
+            ['bake03', 'Suruga Monkey'],
+            ['bake04', 'Nadeko Snake'],
+            ['bake05', 'Tsubasa Cat'],
+            ['nise01', 'Karen Bee'],
+            ['events', 'Event']
+        ];
 
-        function filterColumn ( i ) {
-            $('#emaList').DataTable().column( i ).search(
-                $('#col'+i+'_filter').val()
-            ).draw();
-        }
-        
-        $(document).ready(function () {
-            $('#emaList').DataTable({
-                "ajax" : "sourcedata/ema/emaList.json",
-                pageLength: 25,
-                "columns": [
-                    { "data": 4 },
-                    { 
-                        "data": null,
-                        render: function(data, type, row) {
-                            return '<img src="'+ data[3] +'" style="background-position: center;background-repeat: no-repeat;background-size: cover;height: 77px;width: 125px;margin: auto;"/>';
-                        }
-                    },
-                    { "data": 2 },
-                    { "data": 0 },
-                    { "data": 1 }
-                ]
+        // Create promises from the area list to get the JSON for each area.
+        var promises = areas.map(function(area) {return $.getJSON('sourcedata/ema/' + area[0] + '_ema.json');});
+
+        // When all the JSON has been gotten, combine it into one list.
+        $.when.apply(null,promises).done(function() {
+            // Loop through the areas.
+            var num_areas = arguments[0].length;
+            for (var a = 0; a < num_areas; ++a) {
+                var data = arguments[a][0];
+				if (data.data) data = data.data;
+
+                // Loop through the ema in the area.
+                var num_ema = data.length;
+                for (var e = 0; e < num_ema; ++e) {
+                    var ema_data = {
+                        id: e,
+                        image: data[e][3],
+                        obtain: data[e][0],
+                        ability: data[e][1],
+                        stars: data[e][2],
+                        area: areas[a][1]
+                    };
+                    ema_list.push(ema_data);
+                }
+            }
+
+            // Now that the data is ready, check that the document is ready and then fill the table.
+            $(document).ready(function () {
+                function filterColumn(i) {
+                    $('#emaList').DataTable().column(i).search(
+                        $('#col'+i+'_filter').val()
+                    ).draw();
+                }
+
+                $('#emaList').DataTable({
+                    data: ema_list,
+                    pageLength: 25,
+                    columns: [
+                        {data: 'area'},
+                        {
+                            "data": null,
+                            render: function(data, type, row) {
+                                return '<img src="' + data.image + '" style="background-position: center;background-repeat: no-repeat;background-size: cover;height: 77px;width: 125px;margin: auto;"/>';
+                            }
+                        },
+                        {data: 'stars'},
+                        {data: 'obtain'},
+                        {data: 'ability'}
+                    ]
+                });
+
+                $('select.column_filter').on('change', function() {
+                    filterColumn($(this).parents('tr').attr('data-column'));
+                });
             });
-        
-            $('select.column_filter').on( 'change', function () {
-                filterColumn( $(this).parents('tr').attr('data-column') );
-            } );
         });
     </script>
 </head>
