@@ -27,6 +27,16 @@
 
     <!-- Custom CSS -->
     <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+    <style>
+        .ema_image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 77px;
+            width: 125px;
+            margin: auto;
+        }
+    </style>
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -88,7 +98,7 @@
                 for (var e = 0; e < num_ema; ++e) {
                     var ema_data = {
                         id: e,
-                        image: '<img src="' + data[e][3] + '" style="background-position: center;background-repeat: no-repeat;background-size: cover;height: 77px;width: 125px;margin: auto"/>',
+                        image: '<img src="' + data[e][3] + '" class="ema_image"/>',
                         obtain: data[e][0].join('<br>'),
                         ability: data[e][1],
                         stars: data[e][2],
