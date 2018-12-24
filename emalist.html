@@ -89,7 +89,7 @@
                     var ema_data = {
                         id: e,
                         image: '<img src="' + data[e][3] + '" style="background-position: center;background-repeat: no-repeat;background-size: cover;height: 77px;width: 125px;margin: auto"/>',
-                        obtain: data[e][0][0],
+                        obtain: data[e][0].join('<br>'),
                         ability: data[e][1],
                         stars: data[e][2],
                         area: areas[a][1]
