@@ -121,6 +121,13 @@
                 $('select.column_filter').on('change', function() {
                     filterColumn($(this).parents('tr').attr('data-column'));
                 });
+
+                var arc_filter = document.getElementById('col0_filter');
+                for (var a = 0; a < areas.length; ++a) {
+                    var opt = document.createElement('option');
+                    opt.innerHTML = opt.value = areas[a][1];
+                    arc_filter.appendChild(opt);
+                }
             });
         });
     </script>
@@ -151,14 +158,7 @@
                                         <td>Filter by Arc</td>
                                         <td>
                                             <select class="column_filter" id="col0_filter">
-                                                <option value=""></option>
-                                                <option value="Hitagi Crab">Hitagi Crab</option>
-                                                <option value="Mayoi Snail">Mayoi Snail</option>
-                                                <option value="Suruga Monkey">Suruga Monkey</option>
-                                                <option value="Nadeko Snake">Nadeko Snake</option>
-                                                <option value="Tsubasa Cat">Tsubasa Cat</option>
-                                                <option value="Karen Bee">Karen Bee</option>
-                                                <option value="Kubikiri Cycle Zaregoto">Kubikiri Cycle Zaregoto</option>
+                                                <option></option>
                                             </select>
                                         </td>
                                     </tr>
