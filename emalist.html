@@ -65,7 +65,7 @@
         var ema_list = [];
         var areas = [
             ['bake01', 'Hitagi Crab'],
-            ['bake02', 'Mayoi Mai Mai'],
+            ['bake02', 'Mayoi Snail'],
             ['bake03', 'Suruga Monkey'],
             ['bake04', 'Nadeko Snake'],
             ['bake05', 'Tsubasa Cat'],
@@ -77,20 +77,19 @@
         var promises = areas.map(function(area) {return $.getJSON('sourcedata/ema/' + area[0] + '_ema.json');});
 
         // When all the JSON has been gotten, combine it into one list.
-        $.when.apply(null,promises).done(function() {
+        $.when.apply($,promises).done(function() {
             // Loop through the areas.
-            var num_areas = arguments[0].length;
+            var num_areas = arguments.length;
             for (var a = 0; a < num_areas; ++a) {
                 var data = arguments[a][0];
-				if (data.data) data = data.data;
 
                 // Loop through the ema in the area.
                 var num_ema = data.length;
                 for (var e = 0; e < num_ema; ++e) {
                     var ema_data = {
                         id: e,
-                        image: data[e][3],
-                        obtain: data[e][0],
+                        image: '<img src="' + data[e][3] + '" style="background-position: center;background-repeat: no-repeat;background-size: cover;height: 77px;width: 125px;margin: auto"/>',
+                        obtain: data[e][0][0],
                         ability: data[e][1],
                         stars: data[e][2],
                         area: areas[a][1]
@@ -112,12 +111,7 @@
                     pageLength: 25,
                     columns: [
                         {data: 'area'},
-                        {
-                            "data": null,
-                            render: function(data, type, row) {
-                                return '<img src="' + data.image + '" style="background-position: center;background-repeat: no-repeat;background-size: cover;height: 77px;width: 125px;margin: auto;"/>';
-                            }
-                        },
+                        {data: 'image'},
                         {data: 'stars'},
                         {data: 'obtain'},
                         {data: 'ability'}
