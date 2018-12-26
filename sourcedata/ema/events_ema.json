@@ -1,21 +1,20 @@
-{
-"data" : [
-		[ "Kubikiri Event Only", "F", "3", "https://i.imgur.com/OMQ5O4w.png" ],
-		[ "Kubikiri Event Only", "H", "3", "https://i.imgur.com/sm7fGbX.png" ],
-		[ "Kubikiri Event Only", "U", "3", "https://i.imgur.com/I63xq9p.png" ],
-		[ "Kubikiri Event Only", "G", "3", "https://i.imgur.com/Az90RDC.png" ],
-		[ "Kubikiri Event Only", "X", "3", "https://i.imgur.com/6yTsitU.png" ],
-		[ "Kubikiri Event Only", "L", "3", "https://i.imgur.com/iVAQBsJ.png" ],
-		[ "Kubikiri Event Only", "Q", "3", "https://i.imgur.com/BS6E82w.png" ],
-		[ "Kubikiri Event Only", "B", "3", "https://i.imgur.com/sfijB40.png" ],
-		[ "Kubikiri Event Only", "D", "3", "https://i.imgur.com/vPtVX1a.png" ],
-		[ "Kubikiri Event Only", "N", "3", "https://i.imgur.com/MVY0M5b.png" ],
-		[ "Kubikiri Event Only", "G", "3", "https://i.imgur.com/Mrzb6u8.png" ],
-		[ "Kubikiri Event Only", "X", "3", "https://i.imgur.com/W517zMK.png" ],
-		[ "Kubikiri Event Only", "T", "3", "https://i.imgur.com/WNjlWwL.png" ],
-		[ "Kubikiri Event Only", "T", "3", "https://i.imgur.com/bamRP2h.png" ],
-		[ "Kubikiri Event Only", "A", "3", "https://i.imgur.com/fw5qdFf.png" ],
-		[ "Kubikiri Event Only", "V", "3", "https://i.imgur.com/X8MmMnD.png" ],
-		[ "Kubikiri Event Only", "Z", "3", "https://i.imgur.com/BxF9D3f.png" ],
-		[ "Kubikiri Event Only", "C", "3", "https://i.imgur.com/JNPOYx1.png" ]	]
-}
+[
+    [["Kubikiri Event Only"], "F", 3, "https://i.imgur.com/OMQ5O4w.png"],
+    [["Kubikiri Event Only"], "H", 3, "https://i.imgur.com/sm7fGbX.png"],
+    [["Kubikiri Event Only"], "U", 3, "https://i.imgur.com/I63xq9p.png"],
+    [["Kubikiri Event Only"], "G", 3, "https://i.imgur.com/Az90RDC.png"],
+    [["Kubikiri Event Only"], "X", 3, "https://i.imgur.com/6yTsitU.png"],
+    [["Kubikiri Event Only"], "L", 3, "https://i.imgur.com/iVAQBsJ.png"],
+    [["Kubikiri Event Only"], "Q", 3, "https://i.imgur.com/BS6E82w.png"],
+    [["Kubikiri Event Only"], "B", 3, "https://i.imgur.com/sfijB40.png"],
+    [["Kubikiri Event Only"], "D", 3, "https://i.imgur.com/vPtVX1a.png"],
+    [["Kubikiri Event Only"], "N", 3, "https://i.imgur.com/MVY0M5b.png"],
+    [["Kubikiri Event Only"], "G", 3, "https://i.imgur.com/Mrzb6u8.png"],
+    [["Kubikiri Event Only"], "X", 3, "https://i.imgur.com/W517zMK.png"],
+    [["Kubikiri Event Only"], "T", 3, "https://i.imgur.com/WNjlWwL.png"],
+    [["Kubikiri Event Only"], "T", 3, "https://i.imgur.com/bamRP2h.png"],
+    [["Kubikiri Event Only"], "A", 3, "https://i.imgur.com/fw5qdFf.png"],
+    [["Kubikiri Event Only"], "V", 3, "https://i.imgur.com/X8MmMnD.png"],
+    [["Kubikiri Event Only"], "Z", 3, "https://i.imgur.com/BxF9D3f.png"],
+    [["Kubikiri Event Only"], "C", 3, "https://i.imgur.com/JNPOYx1.png"]
+]
