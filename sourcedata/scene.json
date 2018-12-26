@@ -39,9 +39,12 @@
     ["0037","scn_cardL_ev_minimap_02_0005","4","Size up to 4 PucPucs","Event"],
     ["0038","scn_cardL_ev_minimap_02_0006","4","Size up to 2 PucPucs","Event"],
     ["0039","scn_cardL_ev_minimap_02_0007","4","Sute up to 5 PucPucs","Event"],
-    ["0040","scn_cardL_ev_minimap_03_0001","5","Size up for 3 PucPucs ","Gacha"],
-    ["0041","scn_cardL_ev_minimap_03_0002","5","","Gacha"],
-    ["0042","scn_cardL_ev_minimap_03_0003","4","","Gacha"]
+    ["0040","scn_cardL_ev_minimap_03_0001","5","Size up for 3 PucPucs ","Event"],
+    ["0041","scn_cardL_ev_minimap_03_0002","5","","Event"],
+    ["0042","scn_cardL_ev_minimap_03_0003","4","","Event"],
+    ["0042","scn_cardL_ev_minimap_04_0001","4","","Event"],
+    ["0042","scn_cardL_ev_minimap_04_0002","4","","Event"],
+    ["0042","scn_cardL_ev_minimap_04_0003","4","","Event"]
 
   ]
 }
