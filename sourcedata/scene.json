@@ -42,9 +42,9 @@
     ["0040","scn_cardL_ev_minimap_03_0001","5","Size up for 3 PucPucs ","Event"],
     ["0041","scn_cardL_ev_minimap_03_0002","5","","Event"],
     ["0042","scn_cardL_ev_minimap_03_0003","4","","Event"],
-    ["0043","scn_cardL_ev_minimap_04_0001","4","","Event"],
-    ["0044","scn_cardL_ev_minimap_04_0002","4","","Event"],
-    ["0045","scn_cardL_ev_minimap_04_0003","5","","Event"]
+    ["0043","scn_cardL_ev_minimap_04_0001","5","","Event"],
+    ["0044","scn_cardL_ev_minimap_04_0002","5","","Event"],
+    ["0045","scn_cardL_ev_minimap_04_0003","4","","Event"]
 
   ]
 }
