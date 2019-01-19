@@ -22,7 +22,7 @@ var charactersodachiclicked = false;
 var charactersurugaclicked = false;
 var charactertsubasaclicked = false;
 var characteryotsugiclicked = false;
-var characterdeishuuclicked = false;
+var characterkaikiclicked = false;
 var characteryozuruclicked = false;
 var characterblackhanekawaclicked = false;
 var characterbokuclicked = false;
@@ -151,7 +151,7 @@ function deactivatecharacter() {
     $("#charactersuruga").css('background', '');
     $("#charactertsubasa").css('background', '');
     $("#characteryotsugi").css('background', '');
-    $("#characterdeishuu").css('background', '');
+    $("#characterkaiki").css('background', '');
     $("#characteryozuru").css('background', '');
     $("#characterblackhanekawa").css('background', '');
     $("#characterboku").css('background', '');
@@ -184,7 +184,7 @@ function docharacterfilter(clicked, filter) {
     charactersurugaclicked = false;
     charactertsubasaclicked = false;
     characteryotsugiclicked = false;
-    characterdeishuuclicked = false;
+    characterkaikiclicked = false;
     characteryozuruclicked = false;
     characterblackhanekawaclicked = false;
     characterbokuclicked = false;
@@ -204,7 +204,7 @@ function docharacterfilter(clicked, filter) {
         case "suruga": charactersurugaclicked = clicked; break;
         case "tsubasa": charactertsubasaclicked = clicked; break;
         case "yotsugi": characteryotsugiclicked = clicked; break;
-        case "deishuu": characterdeishuuclicked = clicked; break;
+        case "kaiki": characterkaikiclicked = clicked; break;
         case "yozuru": characteryozuruclicked = clicked; break;
         case "blackhanekawa": characterblackhanekawaclicked = clicked; break;
         case "boku": characterbokuclicked = clicked; break;
