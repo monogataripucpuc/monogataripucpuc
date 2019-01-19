@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" type="img/ico" href="assets/ui/favicon.png">
+
+    <title>PucPucs</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="dist/js/sb-admin-2.js"></script>
+
+    <!-- DataTable Checkbox StateSave-->
+    <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css"
+        rel="stylesheet" />
+    <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
+
+    <!-- Navigation Bar Script-->
+    <script>
+        $(function () {
+            $("#navigationbar").load("navbartest.html");
+        });
+    </script>
+
+    <!-- Data Display Script-->
+    <script type="text/javascript" src="resources/js/filterfunctions.js"></script>
+
+    <script type="text/javascript" class="init">
+        $(document).ready(function () {
+            $('#pucpuc').DataTable({
+                ajax: "resources/data/pucpuc.json",
+                pageLength: 25,
+                stateSave: true,
+                responsive: {},
+                columns: [
+                    { data: 0 },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<img src="resources/images/pucpuc/sprite/' + data[1] + '.png" class="pucpucimage"/>' +
+                                '<span style="display:none;">' + data[1] + '</span>';
+                        }
+                    },
+                    { data: 2 },
+                    { data: 3 },
+                    { data: 4 },
+                    { data: 5 },
+                    { data: 6 },
+                    { data: 7 },
+                    { data: 8 },
+                    { data: 9 },
+                    { data: 10 },
+                    { data: 11 },
+                    { data: 12 },
+                    { data: 13 },
+                    { data: 14 },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return '<img src="resources/images/pucpuc/splashart/' + data[1] + '.png"/>';
+                        }
+                    }
+                ],
+                stateSave: true
+            },
+                // Filter Tier
+                $('#tierss').on('click', function () {
+                    dotierfilter(tierssclicked, "ss");
+                }),
+
+                $('#tiers').on('click', function () {
+                    dotierfilter(tiersclicked, "s");
+                }),
+
+                $('#tiera').on('click', function () {
+                    dotierfilter(tieraclicked, "a");
+                }),
+
+                $('#tierb').on('click', function () {
+                    dotierfilter(tierbclicked, "b");
+                }),
+
+                $('#tierc').on('click', function () {
+                    dotierfilter(tiercclicked, "c");
+                }),
+
+                $('#tierd').on('click', function () {
+                    dotierfilter(tierdclicked, "d");
+                }),
+
+                // Filter Skill
+                $('#skillboardclear').on('click', function () {
+                    doskillfilter(skillboardclearclicked, "Board Clear");
+                }),
+
+                $('#skillsizeup').on('click', function () {
+                    doskillfilter(skillsizeupclicked, "Size Up");
+                }),
+
+                $('#skillpuctypechange').on('click', function () {
+                    doskillfilter(skillpuctypechangeclicked, "Puc Type Change");
+                }),
+
+                $('#skillunique').on('click', function () {
+                    doskillfilter(skilluniqueclicked, "Unique");
+                }),
+
+                // Filter Character
+                $('#characterhitagi').on('click', function () {
+                    docharacterfilter(characterhitagiclicked, "hitagi");
+                }),
+
+                $('#characterkaren').on('click', function () {
+                    docharacterfilter(characterkarenclicked, "karen");
+                }),
+
+                $('#characterkoyomi').on('click', function () {
+                    docharacterfilter(characterkoyomiclicked, "koyomi");
+                }),
+
+                $('#charactermayoi').on('click', function () {
+                    docharacterfilter(charactermayoiclicked, "mayoi");
+                }),
+
+                $('#charactermeme').on('click', function () {
+                    docharacterfilter(charactermemeclicked, "meme");
+                }),
+
+                $('#characternadeko').on('click', function () {
+                    docharacterfilter(characternadekoclicked, "nadeko");
+                }),
+
+                $('#characterougi').on('click', function () {
+                    docharacterfilter(characterougiclicked, "ougi");
+                }),
+
+                $('#charactershinobu').on('click', function () {
+                    docharacterfilter(charactershinobuclicked, "shinobu");
+                }),
+
+                $('#charactersodachi').on('click', function () {
+                    docharacterfilter(charactersodachiclicked, "sodachi");
+                }),
+
+                $('#charactersuruga').on('click', function () {
+                    docharacterfilter(charactersurugaclicked, "suruga");
+                }),
+
+                $('#charactertsubasa').on('click', function () {
+                    docharacterfilter(charactertsubasaclicked, "tsubasa");
+                }),
+
+                $('#characteryotsugi').on('click', function () {
+                    docharacterfilter(characteryotsugiclicked, "yotsugi");
+                }),
+
+                $('#characterdeishuu').on('click', function () {
+                    docharacterfilter(characterdeishuuclicked, "deishuu");
+                }),
+
+                $('#characteryozuru').on('click', function () {
+                    docharacterfilter(characteryozuruclicked, "yozuru");
+                }),
+
+                $('#characterblackhanekawa').on('click', function () {
+                    docharacterfilter(characterblackhanekawaclicked, "blackhanekawa");
+                }),
+
+                $('#characterboku').on('click', function () {
+                    docharacterfilter(characterbokuclicked, "boku");
+                }),
+
+                $('#charactertomo').on('click', function () {
+                    docharacterfilter(charactertomoclicked, "tomo");
+                }),
+
+                $('#characterjun').on('click', function () {
+                    docharacterfilter(characterjunclicked, "jun");
+                }),
+            );
+        });
+    </script>
+
+    <link href="resources/css/datadisplay.css" rel="stylesheet">
+</head>
+
+<body onLoad="resetfilter()" style="background-image: url(resources/images/ui/background.png);">
+
+    <div id="wrapper">
+
+        <div id="navigationbar"></div>
+
+        <div id="page-wrapper" style="min-width: fit-content">
+            <div class="sidenav" style="text-align: center; border-right: solid 1px; background-image: url(resources/images/ui/background.png);">
+                <h1 class="page-header">Filter</h1>
+                <div class="container" style="width: 100%;">
+                    <div>
+                        <!-- Filter tier -->
+                        <button id="tierss" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">SS</button>
+                        <button id="tiers" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">S</button>
+                        <button id="tiera" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">A</button>
+                        <button id="tierb" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">B</button>
+                        <button id="tierc" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">C</button>
+                        <button id="tierd" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">D</button>
+                    </div>
+
+                    <hr>
+                    </hr>
+
+                    <div>
+                        <!-- Filter Skill -->
+                        <button id="skillboardclear" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Board
+                            Clear</button>
+                        <button id="skillsizeup" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Size
+                            Up</button>
+                        <button id="skillpuctypechange" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Puc
+                            Type Change</button>
+                        <button id="skillunique" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Unique</button>
+                    </div>
+
+                    <hr>
+                    </hr>
+
+                    <div>
+                        <!-- Filter Character -->
+                        <button id="characterhitagi" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Hitagi</button>
+                        <button id="characterkaren" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Karen</button>
+                        <button id="characterkoyomi" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Koyomi</button>
+                        <button id="charactermayoi" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Mayoi</button>
+                        <button id="charactermeme" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Meme</button>
+                        <button id="characternadeko" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Nadeko</button>
+                        <button id="characterougi" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Ougi</button>
+                        <button id="charactershinobu" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Shinobu</button>
+                        <button id="charactersodachi" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Sodachi</button>
+                        <button id="charactersuruga" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Suruga</button>
+                        <button id="charactertsubasa" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Tsubasa</button>
+                        <button id="characteryotsugi" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Yotsugi</button>
+                        <button id="characterdeishuu" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Desishuu</button>
+                        <button id="characteryozuru" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Yozuru</button>
+                        <button id="characterblackhanekawa" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Black
+                            Hanekawa</button>
+                        <button id="characterboku" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Boku</button>
+                        <button id="charactertomo" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Tomo</button>
+                        <button id="characterjun" type="button" class="btn btn-primary btn-sm filterbutton filterbuttongroup">Jun</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main" style="background-image: url(resources/images/ui/background.png);">
+                <h1 class="page-header">PucPucs</h1>
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <table id="pucpuc" width="100%" class="table table-bordered" style="font-size: 16px;">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>PucPuc</th>
+                                        <th>Name</th>
+                                        <th>Skill</th>
+                                        <th>Tier</th>
+                                        <th>Rank 1</th>
+                                        <th>Rank 2</th>
+                                        <th>Rank 3</th>
+                                        <th>Rank 4</th>
+                                        <th>Rank 5</th>
+                                        <th>Rank 6</th>
+                                        <th>Rank 7</th>
+                                        <th class="none" style="display:none;">Level 100</th>
+                                        <th class="none" style="display:none;">Ost</th>
+                                        <th class="none" style="display:none;">Notes</th>
+                                        <th class="none" style="display:none;"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
