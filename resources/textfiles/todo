@@ -1,0 +1,16 @@
+Filter
+- Black Hanekawa is filtered out by the Black Hanekawa filter.
+- Having Tsubasa for one and Black Hanekawa for another is a bit confusing. Maybe Tsubasa Hanekawa and Black Hanekawa?
+- Can't choose two filters from the same category
+- make it so that "S" filter doesnt include "SS" while at the same time still include "S-"
+- Don't quiet like how the filters are presented, the scroll-bar esspecially is kind of irritating
+- Pick some better colors for the Buttons
+
+Table
+- Search-Field should be moved to the left and "Show ... entries" to the bottom left (below the table)
+- clicking on the "+" should open the dialog, on the live-site that's a neat feature which is worth keeping, i think
+- Sorting by Tier has to be SS -> S -> A -> B -> C -> D
+
+General
+- Not a fan of the background, at least not for the main-menu
+- Instead of using a label use the place-holder attribute

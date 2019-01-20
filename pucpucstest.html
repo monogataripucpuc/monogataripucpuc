@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -68,7 +67,8 @@
         $(document).ready(function () {
             $('#pucpuc').DataTable({
                 ajax: "resources/data/pucpuc.json",
-                pageLength: 25,
+                pageLength: 50,
+                aLengthMenu: [25, 50, 75, "All"],
                 stateSave: true,
                 responsive: {},
                 columns: [
@@ -78,18 +78,40 @@
                         render: function (data, type, row) {
                             return '<img src="resources/images/pucpuc/sprite/' + data[1] + '.png" class="pucpucimage"/>' +
                                 '<span style="display:none;">' + data[1] + '</span>';
-                        }
+                        },
+                        sortable: false
                     },
                     { data: 2 },
                     { data: 3 },
                     { data: 4 },
-                    { data: 5 },
-                    { data: 6 },
-                    { data: 7 },
-                    { data: 8 },
-                    { data: 9 },
-                    { data: 10 },
-                    { data: 11 },
+                    { 
+                        data: 5,
+                        sortable: false
+                    },
+                    { 
+                        data: 6,
+                        sortable: false
+                    },
+                    { 
+                        data: 7,
+                        sortable: false
+                    },
+                    { 
+                        data: 8,
+                        sortable: false
+                    },
+                    { 
+                        data: 9,
+                        sortable: false
+                    },
+                    { 
+                        data: 10,
+                        sortable: false
+                    },
+                    { 
+                        data: 11,
+                        sortable: false
+                    },
                     { data: 12 },
                     { data: 13 },
                     { data: 14 },
@@ -290,21 +312,21 @@
                 <div class="row">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <table id="pucpuc" width="100%" class="table table-bordered" style="font-size: 16px;">
+                            <table id="pucpuc" width="100%" class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>PucPuc</th>
-                                        <th>Name</th>
-                                        <th>Skill</th>
-                                        <th>Tier</th>
-                                        <th>Rank 1</th>
-                                        <th>Rank 2</th>
-                                        <th>Rank 3</th>
-                                        <th>Rank 4</th>
-                                        <th>Rank 5</th>
-                                        <th>Rank 6</th>
-                                        <th>Rank 7</th>
+                                        <th style="min-width: 30px">ID</th>
+                                        <th style="min-width: 60px">PucPuc</th>
+                                        <th style="min-width: 70px">Name</th>
+                                        <th style="min-width: 50px">Skill</th>
+                                        <th style="min-width: 40px">Tier</th>
+                                        <th style="min-width: 70px">Rank 1</th>
+                                        <th style="min-width: 70px">Rank 2</th>
+                                        <th style="min-width: 70px">Rank 3</th>
+                                        <th style="min-width: 70px">Rank 4</th>
+                                        <th style="min-width: 70px">Rank 5</th>
+                                        <th style="min-width: 70px">Rank 6</th>
+                                        <th style="min-width: 70px">Rank 7</th>
                                         <th class="none" style="display:none;">Level 100</th>
                                         <th class="none" style="display:none;">Ost</th>
                                         <th class="none" style="display:none;">Notes</th>

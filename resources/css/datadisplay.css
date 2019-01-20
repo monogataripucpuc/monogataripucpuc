@@ -97,3 +97,7 @@ hr {
     color: black;
     font-size: 16px;
 }
+
+.menunavigation:hover, .menunavigation:active, .menunavigation:hover+label, .menunavigation:active+label {
+    color: royalblue
+}
